@@ -7,7 +7,7 @@ body {
     background-size: cover;
     height: calc(100vh - 164px);
     color: #555;
-    font-family: 'Lato';
+    font-family: 'Merriweather', serif;
 }
 
 /* from Bulma */
@@ -60,6 +60,34 @@ body {
     background: #000 !important;
 }
 
+/* Footer */
+footer {
+    bottom: 0;
+    background-color: #000;
+    color: #fff;
+    padding: 20px;
+    position: absolute;
+    width: 100%;
+}
+
+footer a {
+    color: #fff !important;
+    margin: 0 3px;
+}
+
+footer h4 {
+    text-transform: uppercase;
+}
+
+footer a:hover {
+    color: #feb751 !important;
+}
+
+.footer-titles {
+    text-transform: uppercase;
+    font-family: 'Merriweather', serif;
+    font-size: 1.5rem;
+}
 /* -------------------------------- Media Queries */
 
 /* Slightly larger container on xl screens */
