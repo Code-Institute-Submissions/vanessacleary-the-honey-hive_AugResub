@@ -1,0 +1,16 @@
+[
+    {
+       "pk":1,
+       "model":"products.product",
+       "fields":{
+          "name":"Pillar Candle Set",
+          "description":"Pillar Candle Set",
+          "price":12.00,
+          "category":1,
+          "rating":4.6,
+          "image_url":"pillar_candle_2.jpg",
+          "image":"pillar_candle_2.jpg"
+       }
+    }
+]
+    
