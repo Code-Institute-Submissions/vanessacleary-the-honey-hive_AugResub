@@ -11,6 +11,20 @@
           "image_url":"pillar_candle_2.jpg",
           "image":"pillar_candle_2.jpg"
        }
-    }
+    },
+
+    {
+      "pk":1,
+      "model":"products.product",
+      "fields":{
+         "name":"Pillar Candle Set - Small",
+         "description":"Pillar Candle Set - Small",
+         "price":12.00,
+         "category":1,
+         "rating":4.6,
+         "image_url":"pillar_candle_small",
+         "image":"pillar_candle_small.jpg"
+      }
+   }
 ]
     
