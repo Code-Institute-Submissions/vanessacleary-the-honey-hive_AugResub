@@ -20,9 +20,9 @@
                 Candles
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="clothing-link">
-                <a href="" class="dropdown-item">All candles</a>
-                <a href="" class="dropdown-item">Original beeswax candles</a>
-                <a href="" class="dropdown-item">Scented candles</a>
+                <a href="{% url 'products' %}?category=candles" class="dropdown-item">All candles</a>
+                <a href="{% url 'products' %}?category=original" class="dropdown-item">Original beeswax candles</a>
+                <a href="{% url 'products' %}?category=scented" class="dropdown-item">Scented candles</a>
             </div>
         </li>
         <!-- Skincare tab on nav bar -->
@@ -32,10 +32,10 @@
                 Skincare
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="homeware-link">
-                <a href="" class="dropdown-item">Lip Balm</a>
-                <a href="" class="dropdown-item">Cleansers</a>
-                <a href="" class="dropdown-item">Soap</a>
-                <a href="" class="dropdown-item">Body</a>
+                <a href="{% url 'products' %}?category=lip_balm" class="dropdown-item">Lip Balm</a>
+                <a href="{% url 'products' %}?category=cleansers" class="dropdown-item">Cleansers</a>
+                <a href="{% url 'products' %}?category=soap" class="dropdown-item">Soap</a>
+                <a href="{% url 'products' %}?category=body" class="dropdown-item">Body</a>
             </div>
         </li>
 
@@ -46,7 +46,7 @@
             Vegan Wraps
         </a>
         <div class="dropdown-menu border-0" aria-labelledby="homeware-link">
-            <a href="" class="dropdown-item">Vegans wraps</a>
+            <a href="{% url 'products' %}?category=wraps" class="dropdown-item">Vegans wraps</a>
         </div>
     </li>
         <!-- Giftset tab on nav bar -->
@@ -56,10 +56,10 @@
                 Gift Sets
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="specials-link">
-                <a href="" class="dropdown-item">New Arrivals</a>
-                <a href="" class="dropdown-item">Deals</a>
-                <a href="" class="dropdown-item">Clearance</a>
-                <a href="" class="dropdown-item">All Specials</a>
+                <a href="{% url 'products' %}?category=new_arrivals" class="dropdown-item">New Arrivals</a>
+                <a href="{% url 'products' %}?category=deals" class="dropdown-item">Deals</a>
+                <a href="{% url 'products' %}?category=clearance" class="dropdown-item">Clearance</a>
+                <a href="{% url 'products' %}?category=new_arrivals,deals,clearance" class="dropdown-item">All Specials</a>
             </div>
         </li>
     </ul>
