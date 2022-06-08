@@ -6,6 +6,7 @@
         "friendly_name": "Candles"
     }
 },
+
 {
     "pk": 2,
     "model": "products.category",
@@ -14,6 +15,7 @@
         "friendly_name": "Skin Care"
     }
 },
+
 {
     "pk": 3,
     "model": "products.category",
@@ -24,7 +26,7 @@
 },
 
 {
-    "pk": 3,
+    "pk": 4,
     "model": "products.category",
     "fields": {
         "name": "gift_sets",

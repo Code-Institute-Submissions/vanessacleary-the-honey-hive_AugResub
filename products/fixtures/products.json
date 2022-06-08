@@ -12,5 +12,33 @@
           "image":"pillar_candle_2.jpg"
        }
     },
+
+    {
+      "pk":2,
+      "model":"products.product",
+      "fields":{
+         "name":"HONEY SOAP WITH BEESWAX",
+         "description":"HONEY SOAP WITH BEESWAX",
+         "price":12.00,
+         "category":1,
+         "rating":4.6,
+         "image_url":"honey_soap.jpg",
+         "image":"honey_soap.jpg"
+      }
+   },
+
+   {
+      "pk":3,
+      "model":"products.product",
+      "fields":{
+         "name":"VEGAN WRAP",
+         "description":"HONEY SOAP WITH BEESWAX",
+         "price":12.00,
+         "category":1,
+         "rating":4.6,
+         "image_url":"VEGAN_WRAP.jpg",
+         "image":"VEGAN_WRAP.jpg"
+      }
+   },
 ]
     
