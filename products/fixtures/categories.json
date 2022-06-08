@@ -10,7 +10,7 @@
     "pk": 2,
     "model": "products.category",
     "fields": {
-        "name": "skin care",
+        "name": "skincare",
         "friendly_name": "Skin Care"
     }
 },
@@ -18,8 +18,17 @@
     "pk": 3,
     "model": "products.category",
     "fields": {
-        "name": "vegan wraps",
+        "name": "vegan_wraps",
         "friendly_name": "Vegan Wraps"
+    }
+},
+
+{
+    "pk": 3,
+    "model": "products.category",
+    "fields": {
+        "name": "gift_sets",
+        "friendly_name": "Gift sets"
     }
 }
 ]
