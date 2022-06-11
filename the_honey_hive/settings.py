@@ -71,9 +71,10 @@ TEMPLATES = [
         'OPTIONS': {
             'context_processors': [
                 'django.template.context_processors.debug',
-                'django.template.context_processors.request', #required by allauth
+                'django.template.context_processors.request', # required by allauth
                 'django.contrib.auth.context_processors.auth', 
                 'django.contrib.messages.context_processors.messages',
+                'django.template.context_processors.media', # Access the no image folder if a product doesn't have an image
                 'bag.contexts.bag_contents',
 
             ],
