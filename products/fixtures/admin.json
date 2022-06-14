@@ -1,0 +1,262 @@
+[
+    {
+       "model":"admin.logentry",
+       "pk":1,
+       "fields":{
+          "action_time":"2022-06-05T14:52:13.696Z",
+          "user":1,
+          "content_type":7,
+          "object_id":"1",
+          "object_repr":"thehoneyhive.example.com",
+          "action_flag":2,
+          "change_message":"[{\"changed\": {\"fields\": [\"Domain name\", \"Display name\"]}}]"
+       }
+    },
+    {
+       "model":"admin.logentry",
+       "pk":2,
+       "fields":{
+          "action_time":"2022-06-05T14:58:36.020Z",
+          "user":1,
+          "content_type":8,
+          "object_id":"1",
+          "object_repr":"vanessacleary@yahoo.com",
+          "action_flag":2,
+          "change_message":"[{\"changed\": {\"fields\": [\"Verified\", \"Primary\"]}}]"
+       }
+    },
+    {
+       "model":"admin.logentry",
+       "pk":3,
+       "fields":{
+          "action_time":"2022-06-08T21:22:48.810Z",
+          "user":1,
+          "content_type":14,
+          "object_id":"1",
+          "object_repr":"Pillar Candle Set",
+          "action_flag":2,
+          "change_message":"[{\"changed\": {\"fields\": [\"Image url\"]}}]"
+       }
+    },
+    {
+       "model":"admin.logentry",
+       "pk":4,
+       "fields":{
+          "action_time":"2022-06-08T21:27:14.899Z",
+          "user":1,
+          "content_type":14,
+          "object_id":"2",
+          "object_repr":"ROSEHIP FACIAL BALM WITH HONEY",
+          "action_flag":1,
+          "change_message":"[{\"added\": {}}]"
+       }
+    },
+    {
+       "model":"admin.logentry",
+       "pk":5,
+       "fields":{
+          "action_time":"2022-06-08T21:29:01.798Z",
+          "user":1,
+          "content_type":14,
+          "object_id":"3",
+          "object_repr":"BODY BALM WITH BEESWAX",
+          "action_flag":1,
+          "change_message":"[{\"added\": {}}]"
+       }
+    },
+    {
+       "model":"admin.logentry",
+       "pk":6,
+       "fields":{
+          "action_time":"2022-06-08T21:33:16.886Z",
+          "user":1,
+          "content_type":14,
+          "object_id":"4",
+          "object_repr":"CLEANSING OIL WITH BEESWAX",
+          "action_flag":1,
+          "change_message":"[{\"added\": {}}]"
+       }
+    },
+    {
+       "model":"admin.logentry",
+       "pk":7,
+       "fields":{
+          "action_time":"2022-06-08T21:34:41.676Z",
+          "user":1,
+          "content_type":14,
+          "object_id":"5",
+          "object_repr":"INTENSIVE HAND & BODY BUTTER WITH BEESWAX",
+          "action_flag":1,
+          "change_message":"[{\"added\": {}}]"
+       }
+    },
+    {
+       "model":"admin.logentry",
+       "pk":8,
+       "fields":{
+          "action_time":"2022-06-08T21:35:34.896Z",
+          "user":1,
+          "content_type":14,
+          "object_id":"6",
+          "object_repr":"HONEY SOAP WITH BEESWAX",
+          "action_flag":1,
+          "change_message":"[{\"added\": {}}]"
+       }
+    },
+    {
+       "model":"admin.logentry",
+       "pk":9,
+       "fields":{
+          "action_time":"2022-06-08T21:36:34.929Z",
+          "user":1,
+          "content_type":14,
+          "object_id":"7",
+          "object_repr":"BEESWAX LIPBALM",
+          "action_flag":1,
+          "change_message":"[{\"added\": {}}]"
+       }
+    },
+    {
+       "model":"admin.logentry",
+       "pk":10,
+       "fields":{
+          "action_time":"2022-06-08T21:38:36.556Z",
+          "user":1,
+          "content_type":14,
+          "object_id":"8",
+          "object_repr":"BEESWAX PILLAR CANDLE",
+          "action_flag":1,
+          "change_message":"[{\"added\": {}}]"
+       }
+    },
+    {
+       "model":"admin.logentry",
+       "pk":11,
+       "fields":{
+          "action_time":"2022-06-08T21:39:32.432Z",
+          "user":1,
+          "content_type":14,
+          "object_id":"9",
+          "object_repr":"BEESWAX CANDLES  DUO",
+          "action_flag":1,
+          "change_message":"[{\"added\": {}}]"
+       }
+    },
+    {
+       "model":"admin.logentry",
+       "pk":12,
+       "fields":{
+          "action_time":"2022-06-08T21:40:48.643Z",
+          "user":1,
+          "content_type":14,
+          "object_id":"10",
+          "object_repr":"BEESWAX CANDLES small",
+          "action_flag":1,
+          "change_message":"[{\"added\": {}}]"
+       }
+    },
+    {
+       "model":"admin.logentry",
+       "pk":13,
+       "fields":{
+          "action_time":"2022-06-08T21:41:22.715Z",
+          "user":1,
+          "content_type":14,
+          "object_id":"8",
+          "object_repr":"BEESWAX PILLAR CANDLE",
+          "action_flag":2,
+          "change_message":"[{\"changed\": {\"fields\": [\"Description\"]}}]"
+       }
+    },
+    {
+       "model":"admin.logentry",
+       "pk":14,
+       "fields":{
+          "action_time":"2022-06-08T21:44:28.065Z",
+          "user":1,
+          "content_type":14,
+          "object_id":"11",
+          "object_repr":"VEGAN BREAD WRAP",
+          "action_flag":1,
+          "change_message":"[{\"added\": {}}]"
+       }
+    },
+    {
+       "model":"admin.logentry",
+       "pk":15,
+       "fields":{
+          "action_time":"2022-06-08T21:46:29.131Z",
+          "user":1,
+          "content_type":14,
+          "object_id":"12",
+          "object_repr":"Vegan SANDWICH WRAP",
+          "action_flag":1,
+          "change_message":"[{\"added\": {}}]"
+       }
+    },
+    {
+       "model":"admin.logentry",
+       "pk":16,
+       "fields":{
+          "action_time":"2022-06-08T21:47:54.743Z",
+          "user":1,
+          "content_type":14,
+          "object_id":"13",
+          "object_repr":"VEGAN FOOD WRAPS – Medium",
+          "action_flag":1,
+          "change_message":"[{\"added\": {}}]"
+       }
+    },
+    {
+       "model":"admin.logentry",
+       "pk":17,
+       "fields":{
+          "action_time":"2022-06-08T21:49:15.083Z",
+          "user":1,
+          "content_type":14,
+          "object_id":"14",
+          "object_repr":"VEGAN FOOD WRAPS – Large",
+          "action_flag":1,
+          "change_message":"[{\"added\": {}}]"
+       }
+    },
+    {
+       "model":"admin.logentry",
+       "pk":18,
+       "fields":{
+          "action_time":"2022-06-08T22:04:21.364Z",
+          "user":1,
+          "content_type":13,
+          "object_id":"3",
+          "object_repr":"vegan_wraps",
+          "action_flag":2,
+          "change_message":"[{\"changed\": {\"fields\": [\"Name\"]}}]"
+       }
+    },
+    {
+       "model":"admin.logentry",
+       "pk":19,
+       "fields":{
+          "action_time":"2022-06-08T22:04:46.943Z",
+          "user":1,
+          "content_type":13,
+          "object_id":"2",
+          "object_repr":"skincare",
+          "action_flag":2,
+          "change_message":"[{\"changed\": {\"fields\": [\"Name\"]}}]"
+       }
+    },
+    {
+       "model":"admin.logentry",
+       "pk":20,
+       "fields":{
+          "action_time":"2022-06-08T22:05:03.659Z",
+          "user":1,
+          "content_type":13,
+          "object_id":"3",
+          "object_repr":"vegan_wraps",
+          "action_flag":2,
+          "change_message":"[]"
+       }
+    }
+ ]
