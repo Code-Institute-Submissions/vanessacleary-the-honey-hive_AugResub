@@ -1,0 +1,184 @@
+[  
+    {
+       "model":"products.product",
+       "pk":1,
+       "fields":{
+          "category":1,
+          "name":"Pillar Candle Set",
+          "description":"Pillar Candle Set",
+          "price":"12.00",
+          "rating":"4.60",
+          "image_url":null,
+          "image":"pillar_candle_2.jpg"
+       }
+    },
+    {
+       "model":"products.product",
+       "pk":2,
+       "fields":{
+          "category":2,
+          "name":"ROSEHIP FACIAL BALM WITH HONEY",
+          "description":"FACE MOISTURISER WITH HONEY\r\n\r\nMain ingredients\r\n\r\nHealing organic shea butter\r\nOrganic Rosehip oil\r\nHydrating organic jojoba oil\r\nHand harvest honey",
+          "price":"21.95",
+          "rating":"5.00",
+          "image_url":null,
+          "image":"rosehip_facial_balm.jpg"
+       }
+    },
+    {
+       "model":"products.product",
+       "pk":3,
+       "fields":{
+          "category":2,
+          "name":"BODY BALM WITH BEESWAX",
+          "description":"Description\r\nThis luxurious balm is suitable for all skin types. Hypo allergenic and a perfect choice for sensitive skin, this balm bursts with goodness. Fortified with soothing beeswax and healing organic shea butter and organic sweet almond oil which contains over 90% unsaturated fatty acids which seal in moisture and restore normal skin barrier function. Vitamins A, B and E provide potent anti-oxidants in abundance. This body balm with beeswax offers outstanding rehydration and protection for delicate skin.\r\n\r\nAwarded a silver medal in the Free From Skincare Awards London U.K 2018\r\n\r\n \r\n\r\nIt is unscented so suitable for the most sensitive skin.\r\n\r\nEnriching\r\nSoothing\r\nHealing\r\nDirections for use:\r\n\r\nFor the most effective results apply a small amount to your hands after your bath or shower while skin is still warm. Gently massage the balm into the skin. Use circular movements to encourage good blood circulation.\r\n\r\nIngredients: Organic Shea Butter (Butyrospermum Parkii), Organic Sweet Almond Oil (Prunus  Dulcis), Organic Sunflower Seed Oil (Helianthus Annuus), Organic Coconut Oil (Virus Vinifera),  Beeswax (Cera Alba), Vitamin E (Tocopherol).\r\n\r\nI am always working towards been fully Eco Friendly using eco-friendly materials for shipping and working towards all containers and packing been fully environmentally friendly\r\n\r\nAdvice: This is a natural product so bee-careful and keep out of direct sunlight or anywhere that may be too warm.\r\n\r\n***Allergy Alert***",
+          "price":"24.00",
+          "rating":"4.50",
+          "image_url":null,
+          "image":"body_balm_42qfayM.jpg"
+       }
+    },
+    {
+       "model":"products.product",
+       "pk":4,
+       "fields":{
+          "category":2,
+          "name":"CLEANSING OIL WITH BEESWAX",
+          "description":"This Cleansing Oil has been formulated for people of all ages. It provides your skin with bee-goodness keeping your skin nourished soften and hydrated whilst cleansing your skin. With super power organic avocado oil ,rosemary extract and healing beeswax this soothing cleanser has the power to remove your make-up as well as gently lift the daily grime.\r\n\r\nCleansing your skin is the most important step in your skincare routine. Using a cleansing oil removes make up and other impurities on your skin while leaving it feel moisturised.\r\n\r\nDouble cleansing with hot cloth.\r\n\r\nApply a small amount to the palm of your hand massage into your face and neck remove with a muslin cloth which has been rinsed out in hot water, repeat the process to ensure that your skin is super clean and leaving it feeling refreshed hydrated and Bee-Fabulous\r\n\r\nDesigned to be used with our organic muslin cloth.\r\n\r\nUse with our organic muslin cloth.\r\n\r\nIngredients\r\n*Helianthus annuus ,*Persea gratissima,\r\n*Glycina Soya, Cera Alba, Rosemarinus officinalis, Tocopherol, *Organic",
+          "price":"24.00",
+          "rating":"4.00",
+          "image_url":null,
+          "image":"cleansing_oil.jpg"
+       }
+    },
+    {
+       "model":"products.product",
+       "pk":5,
+       "fields":{
+          "category":2,
+          "name":"INTENSIVE HAND & BODY BUTTER WITH BEESWAX",
+          "description":"Beeswax blended with organic plant oils it is perfect for protecting sensitive dry skin especially chronically dry conditions such as eczema, dermatitis and psoriasis.\r\n\r\nUnscented\r\n\r\nCertified Organic\r\n\r\nHandmade in Ireland",
+          "price":"14.50",
+          "rating":"4.00",
+          "image_url":null,
+          "image":"hand__body_butter.jpg"
+       }
+    },
+    {
+       "model":"products.product",
+       "pk":6,
+       "fields":{
+          "category":2,
+          "name":"HONEY SOAP WITH BEESWAX",
+          "description":"Pack of honey soap with beeswax whose anti bacterial properties making them the perfect solution to help keep you and all your family safe from infection and germs.\r\n\r\nSoap is unscented\r\n\r\nContains Two bars of Honey Soap\r\n\r\nCheckout our Organic Muslin cloth.\r\n\r\nBee-careful\r\n\r\nWash your hands for 20 seconds to ensure it is done correctly",
+          "price":"10.00",
+          "rating":"4.30",
+          "image_url":null,
+          "image":"honey_soap.jpg"
+       }
+    },
+    {
+       "model":"products.product",
+       "pk":7,
+       "fields":{
+          "category":2,
+          "name":"BEESWAX LIPBALM",
+          "description":"Certified Organic\r\n\r\nUnscented\r\n\r\nHandmade\r\n\r\nEasy slip off  lid.",
+          "price":"5.00",
+          "rating":"5.00",
+          "image_url":null,
+          "image":"lip_balm.jpg"
+       }
+    },
+    {
+       "model":"products.product",
+       "pk":8,
+       "fields":{
+          "category":1,
+          "name":"BEESWAX PILLAR CANDLE",
+          "description":"These elegant, tall, hand rolled beeswax candles add uncompromising finesse to wherever they are placed. Perfect for a dinner table, or on a mirrored mantelpiece, you will fall in love with the blissfully relaxing light and deliciously natural scents.\r\n\r\n \r\n\r\nBeeswax Candles\r\n\r\nContains Two Candles\r\n\r\nHandmade in Ireland this Beeswax Candle is totally pure and natural.\r\n\r\nCotton wicks\r\n\r\n \r\n\r\nSize\r\n\r\nBurning Time 6/7 hrs each\r\n\r\nSuitable to fit in a Tealight Holder\r\n\r\n \r\n\r\nDid You Know\r\n\r\n \r\n\r\nPeople with allergies, sinus problems and asthma have reported significant improvement in their symptoms, breathing better and sleeping better after burning a Pure Beeswax Candle in their bedroom 2/3 hours before going to bed.\r\n\r\n \r\n\r\nBurning times are approximate and depend on temperature, humidity and other ambient conditions,do not light candle where there is a draught, it is a natural product and it will affect it’s burning time. Designed and handmade by Trish in Dunhill Ecopark, Dunhill, Co.Waterford Warning: Take all  wrappings off candle before lighting and as always care has to be taken with a lighting candle at all time especially with children and pets.",
+          "price":"15.00",
+          "rating":"4.20",
+          "image_url":null,
+          "image":"pillar_candle_Tr5XY5m.jpg"
+       }
+    },
+    {
+       "model":"products.product",
+       "pk":9,
+       "fields":{
+          "category":1,
+          "name":"BEESWAX CANDLES  DUO",
+          "description":"Handmade by Trish 3rd generation beekeeper.\r\n\r\nTrish takes the product from the hive to the home.",
+          "price":"14.00",
+          "rating":"4.00",
+          "image_url":null,
+          "image":"pillar_candle_2_7AuGO1m.jpg"
+       }
+    },
+    {
+       "model":"products.product",
+       "pk":10,
+       "fields":{
+          "category":1,
+          "name":"BEESWAX CANDLES small",
+          "description":"These candles are hand-rolled using 100% beeswax and cotton wicks. Beeswax candles produce a beautiful warm glow and have a natural subtle scent.\r\n \r\n\r\nBeeswax Candles\r\n\r\nTwo Candles\r\n\r\n size 35mm x 65mm\r\n\r\nBurning Time 5/6 hrs each\r\n\r\n\r\nDid You Know\r\n\r\n \r\nPeople with allergies, sinus problems and asthma have reported significant improvement in their symptoms, breathing better and sleeping better after burning a Pure Beeswax Candle in their bedroom 2/3 hours before going to bed.\r\n\r\n \r\n\r\nBurning times are approximate and depend on temperature, humidity and other ambient conditions,do not light candle where there is a draught, it is a natural product and it will affect it’s burning time. Designed and handmade by Trish in Dunhill Ecopark, Dunhill, Co.Waterford, Ireland\r\n\r\n Warning: Take all  wrappings off candle before lighting and as always care has to be taken with a lighting candle at all time especially with children and pets",
+          "price":"9.00",
+          "rating":"4.50",
+          "image_url":null,
+          "image":"pillar_candle_small.jpg"
+       }
+    },
+    {
+       "model":"products.product",
+       "pk":11,
+       "fields":{
+          "category":3,
+          "name":"VEGAN BREAD WRAP",
+          "description":"The bread wrap is sized to fit a loaf of bread, keeping bread soft and fresh for longer. By switching to vegan wraps, you will save money, reduce plastic waste and help save the environment!\r\n\r\nContains 1 Vegan Bread wrap (35 x 55cm)",
+          "price":"16.00",
+          "rating":"4.50",
+          "image_url":null,
+          "image":"vegan_wrap_1.jpg"
+       }
+    },
+    {
+       "model":"products.product",
+       "pk":12,
+       "fields":{
+          "category":3,
+          "name":"Vegan SANDWICH WRAP",
+          "description":"Perfect for wrapping up sandwiches and snacks to enjoy on the go for school, work or for outdoor adventures and picnics. By switching to vegan wraps, you will save money, reduce plastic waste and help save the environment!\r\n\r\nContains 1 Maxi wrap (35 x 35cm with button and string).",
+          "price":"11.50",
+          "rating":"4.20",
+          "image_url":null,
+          "image":"VEGAN_SANDWICH_WRAP.jpg"
+       }
+    },
+    {
+       "model":"products.product",
+       "pk":13,
+       "fields":{
+          "category":3,
+          "name":"VEGAN FOOD WRAPS – Medium",
+          "description":"A perfect choice for packing kids’ lunches for school, or wrapping small to medium sized items like cheese, crackers, fruits, and leftovers. It’s ideal for use in the kitchen or on the go.\r\n\r\nContains 2 Midi wraps (25 x 25cm) and 1 Mini wrap (20 x 20cm)",
+          "price":"17.00",
+          "rating":"4.80",
+          "image_url":null,
+          "image":"VEGAN_FOOD_WRAPS.jpg"
+       }
+    },
+    {
+       "model":"products.product",
+       "pk":14,
+       "fields":{
+          "category":3,
+          "name":"VEGAN FOOD WRAPS – Large",
+          "description":"A great starter pack, containing one each of the mini, midi and maxi wraps. It’s perfect for use in the kitchen or on the go. By switching to vegan wraps, you will save money, reduce plastic waste and help save the environment!\r\n\r\nContains 1 Maxi wrap (35 x 35cm), 1 Midi wrap (25 x 25cm) and 1 Mini wrap (20 x 20cm)",
+          "price":"20.00",
+          "rating":"4.60",
+          "image_url":null,
+          "image":"VEGAN_WRAP_LARGE.jpg"
+       }
+    }
+ ]

@@ -1,0 +1,35 @@
+[
+    {
+    "model":"products.category",
+    "pk":1,
+    "fields":{
+       "name":"candles",
+       "friendly_name":"Candles"
+    }
+ },
+ {
+    "model":"products.category",
+    "pk":2,
+    "fields":{
+       "name":"skincare",
+       "friendly_name":"Skin Care"
+    }
+ },
+ {
+    "model":"products.category",
+    "pk":3,
+    "fields":{
+       "name":"vegan_wraps",
+       "friendly_name":"Vegan Wraps"
+    }
+ },
+ {
+    "model":"products.category",
+    "pk":4,
+    "fields":{
+       "name":"gift_sets",
+       "friendly_name":"Gift sets"
+    }
+ },
+ 
+]
