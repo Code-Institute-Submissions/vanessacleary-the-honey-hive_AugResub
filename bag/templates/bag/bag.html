@@ -103,7 +103,7 @@
                 </td>
             </tr>
 
-            <!--  Checkout/Keep shopping/Empty bag -->
+            <!--  Keep shopping btn -->
             <tr>
                 <td colspan="5" class="text-right">
                     <a href="{% url 'products' %}" class="btn btn-outline-black rounded-0 btn-lg">
@@ -112,7 +112,8 @@
                         </span>
                         <span class="text-uppercase">Keep Shopping</span>
                     </a>
-                    <a href="" class="btn btn-black rounded-0 btn-lg">
+                <!--  check out btn -->
+                <a href="{% url 'checkout' %}" class="btn btn-black rounded-0 btn-lg">
                         <span class="text-uppercase">Secure Checkout</span>
                         <span class="icon">
                             <i class="fas fa-lock"></i>
@@ -123,6 +124,9 @@
             </table>
         </div>
         {% else %}
+
+        <!-- you back is empty  -->
+
         <p class="lead mb-5">Your bag is empty.</p>
         <a href="{% url 'products' %}" class="btn btn-outline-black rounded-0 btn-lg">
             <span class="icon">
