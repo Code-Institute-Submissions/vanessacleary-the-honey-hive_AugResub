@@ -6,6 +6,7 @@ from django.conf import settings
 from django.template.loader import render_to_string
 
 from .forms import ContactForm
+from profiles.models import UserProfile
 
 
 def contact(request):
@@ -29,12 +30,29 @@ def contact(request):
                 user_enquiry.save()
                 send_confirmation_email(user_enquiry)
                 messages.success(request, 'Your enquiry has been sent. Check your emails for a confirmation')
-                return redirect(reverse('home')
-            else: 
-                'contact_form': contact_form,
+          return redirect(reverse('home'))
+
+        else:
+            messages.error(request, 'There was an error with your enquiry. Please ensure the form is valid')
+            return redirect(reverse('contact'))
+        if request.user.is_authenticated:
+            # If user is logged in try and populate information
+            try:
+                profile = UserProfile.objects.get(user=request.user)
+                contact_form = ContactForm(initial={
+                    'full_name': profile.default_full_name,
+                    'email_from': profile.default_email,
+                })
+            except UserProfile.DoesNotExist:
+                contact_form = ContactForm()
+        else:
+            contact_form = ContactForm()
+        template = 'contact/contact.html'
+        context = {
+            'contact_form': contact_form,
         }
 
- return render(request, template, context)
+        return render(request, template, context)
 
 def send_confirmation_email(user_enquiry):
     """ Send a confirmation email following successful enquiry """
@@ -49,3 +67,4 @@ def send_confirmation_email(user_enquiry):
         body,
         settings.DEFAULT_FROM_EMAIL,
         [cust_email]
+    )
