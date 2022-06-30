@@ -19,6 +19,7 @@ def all_products(request):
     direction = None
 
     if request.GET:
+        # ...?category=skincare
         if 'sort' in request.GET:
             sortkey = request.GET['sort']
             sort = sortkey
