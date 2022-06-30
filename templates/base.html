@@ -36,7 +36,8 @@
   {% block corejs %}
 
   <!-- jQuery -->
-  <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
   <!-- Bootstrap Bundle with Popper -->
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
     integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
@@ -100,7 +101,8 @@
             </div>
           </li>
           <li class="list-inline-item">
-            <a class="{% if grand_total %}text-info font-weight-bold{% else %}text-black{% endif %} nav-link" href="{% url 'view_bag' %}">
+            <a class="{% if grand_total %}text-info font-weight-bold{% else %}text-black{% endif %} nav-link"
+              href="{% url 'view_bag' %}">
               <div class="text-center">
                 <div><i class="fas fa-shopping-bag fa-lg"></i></div>
                 <p class="my-0">
@@ -140,15 +142,15 @@
   <div class="message-container">
     {% for message in messages %}
     {% with message.level as level %}
-        {% if level == 40 %}
-            {% include 'includes/toasts/toast_error.html' %}
-        {% elif level == 30 %}
-            {% include 'includes/toasts/toast_warning.html' %}
-        {% elif level == 25 %}
-            {% include 'includes/toasts/toast_success.html' %}
-        {% else %}
-            {% include 'includes/toasts/toast_info.html' %}
-        {% endif %}
+    {% if level == 40 %}
+    {% include 'includes/toasts/toast_error.html' %}
+    {% elif level == 30 %}
+    {% include 'includes/toasts/toast_warning.html' %}
+    {% elif level == 25 %}
+    {% include 'includes/toasts/toast_success.html' %}
+    {% else %}
+    {% include 'includes/toasts/toast_info.html' %}
+    {% endif %}
     {% endwith %}
     {% endfor %}
   </div>
@@ -162,66 +164,69 @@
   {% block content %}
   {% endblock %}
 
-      <!-- Footer -->
-      <footer class="mt-5">
+  <!-- Footer -->
+  <footer class="mt-5">
+    <div class="row">
+      <div class="col-6">
         <div class="row">
-          <div class="col-6">
-            <div class="row">
-              <div class="col-12 d-flex justify-content-center">
-                <p class="footer-titles">Follow us</p>
-              </div>
-            </div>
-            <div class="row ">
-              <!-- Social media links -->
-              <div class="col-12 d-flex justify-content-center">
-                <ul class="list-inline list-unstyled">
-                  <li class="list-inline-item">
-                    <a href="https://www.facebook.com/" target="_blank" aria-label="Link to go to Facebook"
-                      rel="noopener"><i class="fab fa-facebook-square fa-lg"></i></a>
-                  </li>
-                  <li class="list-inline-item">
-                    <a href="https://www.instagram.com/" target="_blank" aria-label="Link to go to Instagram"
-                      rel="noopener"><i class="fab fa-instagram fa-lg"></i></a>
-                  </li>
-                  <li class="list-inline-item">
-                    <a href="https://twitter.com/" target="_blank" aria-label="Link to go to Twitter" rel="noopener"><i
-                        class="fab fa-twitter fa-lg"></i></a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <!-- Contact and back to top links -->
-          <div class="col-6">
-            <div class="row">
-              <div class="col-12 d-flex justify-content-center">
-                <p class="footer-titles">Contact us</p>
-                </a>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-12 d-flex justify-content-center">
-                <a href="#" aria-label="Link to go to top of page">Back to top</a>
-              </div>
-            </div>
+          <div class="col-12 d-flex justify-content-center">
+            <p class="footer-titles">Follow us</p>
           </div>
         </div>
-        <div class="container-fluid">
-          <hr class="hr-decoration">
+        <div class="row ">
+          <!-- Social media links -->
+          <div class="col-12 d-flex justify-content-center">
+            <ul class="list-inline list-unstyled">
+              <li class="list-inline-item">
+                <a href="https://www.facebook.com/" target="_blank" aria-label="Link to go to Facebook"
+                  rel="noopener"><i class="fab fa-facebook-square fa-lg"></i></a>
+              </li>
+              <li class="list-inline-item">
+                <a href="https://www.instagram.com/" target="_blank" aria-label="Link to go to Instagram"
+                  rel="noopener"><i class="fab fa-instagram fa-lg"></i></a>
+              </li>
+              <li class="list-inline-item">
+                <a href="https://twitter.com/" target="_blank" aria-label="Link to go to Twitter" rel="noopener"><i
+                    class="fab fa-twitter fa-lg"></i></a>
+              </li>
+            </ul>
+          </div>
         </div>
+      </div>
+      <!-- Contact and back to top links -->
+      <div class="col-6">
         <div class="row">
-          <div class="col-12">
-            <p class="text-center">© 2022 The Honey Hive</p>
+          <div class="col-12 d-flex justify-content-center">
+            <a href="{% url 'contact' %}" aria-label="Link to go to contact form">
+              <p class="footer-titles">Contact us</p>
+            </a>
           </div>
         </div>
-      </footer>
+
+        <!-- back to top links -->
+        <div class="row">
+          <div class="col-12 d-flex justify-content-center">
+            <a href="#" aria-label="Link to go to top of page">Back to top</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid">
+      <hr class="hr-decoration">
+    </div>
+    <div class="row">
+      <div class="col-12">
+        <p class="text-center">© 2022 The Honey Hive</p>
+      </div>
+    </div>
+  </footer>
 
   {% block postloadjs %}
   <script type="text/javascript">
-      $('.toast').toast('show');
+    $('.toast').toast('show');
   </script>
   {% endblock %}
-  
+
 </body>
 
 </html>

@@ -1,4 +1,5 @@
 from django.shortcuts import render, reverse, redirect
+from django.contrib.auth.models import User
 from django.contrib import messages
 
 from .forms import ContactForm
@@ -6,7 +7,7 @@ from .forms import ContactForm
 
 def contact(request):
     """ A view to render the contact page """
-    
+
  if request.method == 'POST':
         # If post method successful get information from form
         form_data = {
@@ -18,7 +19,11 @@ def contact(request):
         contact_form = ContactForm(form_data)
 
         if contact_form.is_valid():
-            customer_contact = contact_form.save(commit=False)
+              user_enquiry = contact_form.save(commit=False)
+            if request.user.is_authenticated:
+                user = User.objects.get(username=request.user)
+                user_enquiry.user = user
+                user_enquiry.save()
             messages.success(request, 'Your enquiry has been sent. Check your emails for a confirmation')
             return redirect(reverse('home'))
         else:
