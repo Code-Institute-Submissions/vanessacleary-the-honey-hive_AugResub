@@ -4,9 +4,8 @@ from django.contrib import messages
 from django.core.mail import send_mail
 from django.conf import settings
 from django.template.loader import render_to_string
-
-from .forms import ContactForm
 from profiles.models import UserProfile
+from .forms import ContactForm
 
 
 def contact(request):
@@ -21,41 +20,43 @@ def contact(request):
             'enquiry': request.POST['enquiry'],
         }
         contact_form = ContactForm(form_data)
-
+        # If form valid, save enquiry
         if contact_form.is_valid():
             user_enquiry = contact_form.save(commit=False)
             name = contact_form.cleaned_data['full_name']
             email = contact_form.cleaned_data['email_from']
             enquiry = contact_form.cleaned_data['enquiry']
-            
             if request.user.is_authenticated:
                 user = User.objects.get(username=request.user)
                 user_enquiry.user = user
-                user_enquiry.save()
-
-                # Send confirmation email to user
-                send_confirmation_email(user_enquiry)
-                
-                send_mail(
+            user_enquiry.save()
+            # Send confirmation email to user
+            send_confirmation_email(user_enquiry)
+            # Send email to admin notifying of new contact message
+            send_mail(
                 f"You have received an enquiry from { name }",
                 enquiry,
                 email,
                 [settings.DEFAULT_FROM_EMAIL],
                 )
-                messages.success
-                (request, 'Your enquiry has been sent. Check your emails for a confirmation')
-          return redirect(reverse('home'))
-
+            messages.success(request,
+                             'Your enquiry has been sent.'
+                             'Check your emails for a confirmation')
+            return redirect(reverse('home'))
+        # If not valid, error message displayed
         else:
-            messages.error(request, 'There was an error with your enquiry. Please ensure the form is valid')
+            messages.error(request,
+                           'There was an error with your enquiry.'
+                           'Please ensure the form is valid')
             return redirect(reverse('contact'))
+    else:
         if request.user.is_authenticated:
             # If user is logged in try and populate information
             try:
                 profile = UserProfile.objects.get(user=request.user)
                 contact_form = ContactForm(initial={
                     'full_name': profile.default_full_name,
-                    'email_from': profile.default_email,
+                    'email_from': profile.user.email,
                 })
             except UserProfile.DoesNotExist:
                 contact_form = ContactForm()
@@ -68,8 +69,9 @@ def contact(request):
 
         return render(request, template, context)
 
+
 def send_confirmation_email(user_enquiry):
-    """ Send a confirmation email following successful enquiry """
+    """ Send a confirmation email to user following successful enquiry """
     cust_email = user_enquiry.email_from
     subject = 'Thank you for contacting Surf the Wave'
     body = render_to_string(

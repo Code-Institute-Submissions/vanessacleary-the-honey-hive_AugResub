@@ -1,6 +1,6 @@
-from django.urls import path, include
+from django.urls import path
 from . import views
 
 urlpatterns = [
-    path('', views.contact_post, name='contact_post'),
+    path('', views.contact, name='contact'),
 ]
