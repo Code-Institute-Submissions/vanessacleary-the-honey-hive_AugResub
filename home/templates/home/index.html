@@ -15,44 +15,60 @@
 
 {% block content %}
 <header class="bgimg w3-display-container w3-grayscale-min" id="home">
-  <!-- <div class="w3-display-bottomleft w3-center w3-padding-large w3-hide-small">
-    <span class="w3-tag">Something about Bees 
-    </span>
-  </div> -->
   <div class="text-center">
-    <span class="w3-text-white text-center" style="font-size:70px">The Honey Hive</span>
+    <span class=" text-center" style="font-size:70px">The Honey Hive</span>
 
   </div>
   <div class="text-center">
     
-    <span class="w3-text-white text-center" style="font-size:50px"> Natural and Organic Bee products</span>
+    <span class="text-center" style="font-size:50px"> Natural & Organic Bee products</span>
   </div>
 
 <div class="text-center">
   <h4>
-    <a href="{% url 'products' %}" class="shop-now-button btn btn-lg rounded-0 text-uppercase py-3">Shop Now</a>
+    <a href="{% url 'products' %}" class="shop-now-button btn btn-lg rounded-pill text-uppercase py-3">Shop Now</a>
 </h4>
 </div>
-
-   <div class="w3-display-bottomright w3-center w3-padding-large">
-    <span class="w3-text-white">PARTY PARTY</span>
-  </div> 
   
 </header>
 
 <!-- About Container -->
-<div class="w3-container" id="about">
-  <div class="w3-content" style="max-width:700px">
-    <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">About The Honey Hive</span></h5>
-    <p>blabla by Mr. Smith in lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-    <p>>blabla by Mr. Smith in lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-    <div class="w3-panel w3-leftbar w3-light-grey">
-      <p><i>>blabla by Mr. Smith in lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</i></p>
-      <p>>blabla by Mr. Smith in lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+<div class="container mt-5" id="about">
+
+  <div class="content">
+
+    <h3 class="text-center">About The Honey Hive</h3>
+
+  </div>
+
+ <div class="text-center">
+    <p>
+    The Honey Hive was founded in summer 2021 to bring you the finest sourced home made bee products that are on the market.
+    We wanted to create one space for you to shop all your favourate bees waz products in one place. 
+    </p>
+
+    <div class="text-center">
+    <p>
+        <i>
+          We strive to deliver the best Bee's wax candles, Bees wax vegan food wraps and the best skin care. 
+        </i>
+    </p>
+    <div class="text-center">
+      <p>
+      We work with the best creators and brands in the market and hand pick the products we know you will love! 
+      </p>
+
     </div>
-    <img src="/w3images/coffeeshop.jpg" style="width:100%;max-width:1000px" class="w3-margin-top">
-    <p><strong>Something</strong> Somehting</p>
-    <p><strong>Something</strong> Something</p>
+  </div>
+
+  <div class="text-center">
+    <h4>
+      <a href="{% url 'products' %}" class="shop-now-button btn btn-lg rounded-pill text-uppercase py-3">Shop Now</a>
+  </h4>
+  </div>
+
+    <!-- <img src="/w3images/coffeeshop.jpg" style="width:100%;max-width:1000px" class="w3-margin-top"> -->
+
   </div>
 </div>
 {% endblock %}

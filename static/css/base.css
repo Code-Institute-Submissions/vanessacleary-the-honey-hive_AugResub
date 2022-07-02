@@ -4,16 +4,17 @@ html {
 
 body {
     /* background-size: cover;
-    height: calc(100vh - 164px);
+    
     color: #555; */
     font-family: 'Merriweather', serif;
 } 
 
 .bgimg {
     background-position: center;
+    height: calc(85vh - 164px);
     background-size: cover;
     background-image: url('/media/honey_hero_img.jpg');
-    min-height: 75%;
+    /* min-height: 75%; */
     font-family: 'Merriweather', serif;
   }
   
@@ -28,12 +29,13 @@ body {
 }
 
 .text-logo {
-    color: #fdb800;
+    color: #000;
+    
 }
 
-.logo-font {
+/* .logo-font {
     text-transform: uppercase;
-}
+} */
 
 .main-logo-link {
     width: fit-content;
@@ -188,7 +190,8 @@ input[name='q']::placeholder {
 /* Contact */
 
 btn-contact {
-    color: #fdb800;!important;
+   color: #F5B503;!important;
+/* color: #FFEA00 !important; */
 }
 
 /* Footer */
