@@ -6,6 +6,7 @@ class SubscibersForm(forms.ModelForm):
         model = Subscribers
         fields = ['email', ]
 
+# The mail messgae - all fiedls (title and message)
 class MailMessageForm(forms.ModelForm):
     class Meta:
         model = MailMessage

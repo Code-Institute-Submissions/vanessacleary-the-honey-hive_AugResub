@@ -1,6 +1,8 @@
 from django.shortcuts import render
 from . forms import SubscibersForm, MailMessageForm
 from django.contrib import messages
+from django.contrib import messages
+from django.core.mail import send_mail
 
 # Create your views here.
 
@@ -10,7 +12,7 @@ def letter(request):
         if form.is_valid():
             form.save()
             messages.success(request, "Subscription Successful")
-            return redirect("/")
+            return redirect(reverse('home'))
     else:
         form = SubscibersForm()
     context = {
