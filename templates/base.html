@@ -19,7 +19,7 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
     integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
   <!-- Font Awesome -->
-  <script src="https://kit.fontawesome.com/e9c73d7092.js" crossorigin="anonymous"></script> <!-- Google Font -->
+  <script src="https://kit.fontawesome.com/e9c73d7092.js" crossorigin="anonymous"></script> 
   <!-- Google Font -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -54,13 +54,16 @@
 </head>
 
 <body>
+  <!-- The logo -->
   <header class="container-fluid fixed-top">
     <div id="topnav" class="row bg-white pt-lg-2 d-none d-lg-flex">
       <div class="col-12 col-lg-4 my-auto py-1 py-lg-0 text-center text-lg-left">
         <a href="{% url 'home' %}" class="nav-link main-logo-link">
-          <h2 class="logo-font text-logo my-0">The <strong style="color: #ffc107"><u>Honey</u></strong> Hive</h2>
+          <h2 class="logo-font text-logo my-0 hvr-grow">The <strong style="color: #ffc107"><u>Honey</u></strong> Hive</h2>
         </a>
       </div>
+
+<!-- The search bar -->
       <div class="col-12 col-lg-4 my-auto py-1 py-lg-0">
         <form method="GET" action="{% url 'products' %}">
           <div class="input-group w-100">
@@ -132,7 +135,7 @@
       </nav>
     </div>
     <div id="delivery-banner" class="row text-center">
-      <div class="col bg-black text-white">
+      <div class="col delivery-banner text-white">
         <h4 class="logo-font my-1">Free delivery on orders over ${{ free_delivery_threshold }}!</h4>
       </div>
     </div>
@@ -177,15 +180,15 @@
         <div class="row ">
           <div class="col-12 d-flex justify-content-center">
             <ul class="list-inline list-unstyled">
-              <li class="list-inline-item">
+              <li class="list-inline-item hvr-grow">
                 <a href="https://www.facebook.com/" target="_blank" aria-label="Link to go to Facebook"
                   rel="noopener"><i class="fab fa-facebook-square fa-lg"></i></a>
               </li>
-              <li class="list-inline-item">
+              <li class="list-inline-item hvr-grow">
                 <a href="https://www.instagram.com/" target="_blank" aria-label="Link to go to Instagram"
                   rel="noopener"><i class="fab fa-instagram fa-lg"></i></a>
               </li>
-              <li class="list-inline-item">
+              <li class="list-inline-item hvr-grow">
                 <a href="https://twitter.com/" target="_blank" aria-label="Link to go to Twitter" rel="noopener"><i
                     class="fab fa-twitter fa-lg"></i></a>
               </li>
@@ -198,11 +201,11 @@
         <div class="row">
           <div class="col-12 d-flex justify-content-center">
             <a href="{% url 'contact' %}" aria-label="Link to go to contact form">
-              <p class="footer-titles">Contact</p>
+              <p class="footer-titles hvr-grow">Contact</p>
             </a>
             <div class="col-12 d-flex justify-content-center">
             <a href="{% url 'letter' %}" aria-label="Link to go to contact form">
-              <p class="footer-titles">Subscribe</p>
+              <p class="footer-titles hvr-grow">Subscribe</p>
             </div>
           </div>
         </div>
@@ -219,7 +222,7 @@
 
           <!-- back to top links -->
           <div class="row">
-            <div class="col-12 d-flex justify-content-center">
+            <div class="col-12 d-flex justify-content-center hvr-grow">
               <a href="#" aria-label="Link to go to top of page">Back to top</a>
             </div>
           </div>

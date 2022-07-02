@@ -6,30 +6,30 @@
 {% endblock %}
 
 {% block page_header %}
-    <div class="container header-container">
-        <div class="row">
-            <div class="col"></div>
-        </div>
-    </div>
+<div class="container header-container">
+  <div class="row">
+    <div class="col"></div>
+  </div>
+</div>
 {% endblock %}
 
 {% block content %}
-<header class="bgimg w3-display-container w3-grayscale-min" id="home">
+<header class="bgimg" id="home">
   <div class="text-center">
     <span class=" text-center" style="font-size:70px">The Honey Hive</span>
 
   </div>
   <div class="text-center">
-    
+
     <span class="text-center" style="font-size:50px"> Natural & Organic Bee products</span>
   </div>
 
-<div class="text-center">
-  <h4>
-    <a href="{% url 'products' %}" class="shop-now-button btn btn-lg rounded-pill text-uppercase py-3">Shop Now</a>
-</h4>
-</div>
-  
+  <div class="text-center">
+    <h4>
+      <a href="{% url 'products' %}" class="shop-now-button btn btn-md rounded-pill text-uppercase hvr-grow py-3">Shop Now</a>
+    </h4>
+  </div>
+
 </header>
 
 <!-- About Container -->
@@ -41,31 +41,32 @@
 
   </div>
 
- <div class="text-center">
+  <div class="text-center">
     <p>
-    The Honey Hive was founded in summer 2021 to bring you the finest sourced home made bee products that are on the market.
-    We wanted to create one space for you to shop all your favourate bees waz products in one place. 
+      The Honey Hive was founded in summer 2021 to bring you the finest sourced home made bee products that are on the
+      market.
+      We wanted to create one space for you to shop all your favourate bees waz products in one place.
     </p>
 
-    <div class="text-center">
-    <p>
-        <i>
-          We strive to deliver the best Bee's wax candles, Bees wax vegan food wraps and the best skin care. 
-        </i>
-    </p>
     <div class="text-center">
       <p>
-      We work with the best creators and brands in the market and hand pick the products we know you will love! 
+        <i>
+          We strive to deliver the best Bee's wax candles, Bees wax vegan food wraps and the best skin care.
+        </i>
       </p>
+      <div class="text-center">
+        <p>
+          We work with the best creators and brands in the market and hand pick the products we know you will love!
+        </p>
 
+      </div>
     </div>
-  </div>
 
-  <div class="text-center">
-    <h4>
-      <a href="{% url 'products' %}" class="shop-now-button btn btn-lg rounded-pill text-uppercase py-3">Shop Now</a>
-  </h4>
-  </div>
+    <div class="text-center">
+      <h4>
+        <a href="{% url 'products' %}" class="shop-now-button btn btn-md rounded-pill text-uppercase hvr-grow py-3">Shop Now</a>
+      </h4>
+    </div>
 
     <!-- <img src="/w3images/coffeeshop.jpg" style="width:100%;max-width:1000px" class="w3-margin-top"> -->
 

@@ -4,7 +4,6 @@ html {
 
 body {
     /* background-size: cover;
-    
     color: #555; */
     font-family: 'Merriweather', serif;
 } 
@@ -17,7 +16,33 @@ body {
     /* min-height: 75%; */
     font-family: 'Merriweather', serif;
   }
-  
+
+/* Nav bar */
+
+.navbar-light .navbar-nav .nav-link:hover {
+    color: #ffc107  !important;
+}
+
+.hvr-grow {
+    display: inline-block;
+    vertical-align: middle;
+    transform: translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    backface-visibility: hidden;
+    -moz-osx-font-smoothing: grayscale;
+    transition-duration: 0.3s;
+    transition-property: transform;
+}
+
+.hvr-grow:hover,
+.hvr-grow:focus,
+.hvr-grow:active {
+    transform: scale(1.1);
+}
+
+.delivery-banner {
+    background-color: #0e1111; !important;
+}
 
 /* from Bulma */
 .icon {
@@ -29,28 +54,24 @@ body {
 }
 
 .text-logo {
-    color: #000;
+    color: #0e1111;
     
 }
-
-/* .logo-font {
-    text-transform: uppercase;
-} */
 
 .main-logo-link {
     width: fit-content;
 }
 
 .shop-now-button {
-    background: black;
+    background: #0e1111;
     color: white;
     min-width: 260px;
 }
-
+/* 
 .btn-black {
     background: black;
     color: white;
-}
+} */
 
 .btn-outline-black {
     background: white;
@@ -71,20 +92,20 @@ body {
 .btn-black:hover,
 .btn-black:active,
 .btn-black:focus {
-    background: #222;
+    background: red;
     color: white;
 }
 
 .text-black {
-    color: #000 !important;
+    color: #0e1111 !important;
 }
 
 .border-black {
-    border: 1px solid black !important;
+    border: 1px solid #0e1111!important;
 }
 
 .bg-black {
-    background: #000 !important;
+    background: #0e1111 !important;
 }
 
 .overlay {
@@ -197,7 +218,7 @@ btn-contact {
 /* Footer */
 footer {
     bottom: 0;
-    background-color: #000;
+    background-color: #0e1111;
     color: #fff;
     padding: 20px;
     /* position: absolute; */
@@ -214,12 +235,12 @@ footer h4 {
 }
 
 footer a:hover {
-    color: #feb751 !important;
+    color: #ffc107 !important;
 }
 
 .footer-titles {
-    text-transform: uppercase;
-    font-family: 'Akshar';
+    /* text-transform: uppercase; */
+    font-family: 'Merriweather', serif;
     font-size: 1.5rem;
 }
 
@@ -240,7 +261,7 @@ footer a:hover {
 }
 
 .allauth-form-inner-content input {
-    border-color: #000;
+    border-color: #0e1111;
     border-radius: 0;
 }
 
@@ -264,8 +285,8 @@ footer a:hover {
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
-    background-color: #000;
-    border: 1px solid #000;
+    background-color: #0e1111;
+    border: 1px solid #0e1111;
     padding: .375rem .75rem;
     font-size: 1rem;
     line-height: 1.5;
