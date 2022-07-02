@@ -170,11 +170,11 @@
       <div class="col-6">
         <div class="row">
           <div class="col-12 d-flex justify-content-center">
-            <p class="footer-titles">Follow us</p>
+            <p class="footer-titles">Follow</p>
           </div>
         </div>
+        <!-- Social media links -->
         <div class="row ">
-          <!-- Social media links -->
           <div class="col-12 d-flex justify-content-center">
             <ul class="list-inline list-unstyled">
               <li class="list-inline-item">
@@ -193,32 +193,48 @@
           </div>
         </div>
       </div>
-      <!-- Contact and back to top links -->
+      <!-- Contact -->
       <div class="col-6">
         <div class="row">
           <div class="col-12 d-flex justify-content-center">
             <a href="{% url 'contact' %}" aria-label="Link to go to contact form">
-              <p class="footer-titles">Contact us</p>
+              <p class="footer-titles">Contact</p>
             </a>
+            <div class="col-12 d-flex justify-content-center">
+            <a href="{% url 'letter' %}" aria-label="Link to go to contact form">
+              <p class="footer-titles">Subscribe</p>
+            </div>
           </div>
         </div>
 
-        <!-- back to top links -->
-        <div class="row">
-          <div class="col-12 d-flex justify-content-center">
-            <a href="#" aria-label="Link to go to top of page">Back to top</a>
+    
+        <!-- <div class="col-6">
+          <div class="row">
+            <div class="col-12 d-flex justify-content-center">
+              <a href="{% url 'letter' %}" aria-label="Link to go to contact form">
+                <p class="footer-titles">Subscribe</p>
+              </a>
+            </div>
+          </div> -->
+
+          <!-- back to top links -->
+          <div class="row">
+            <div class="col-12 d-flex justify-content-center">
+              <a href="#" aria-label="Link to go to top of page">Back to top</a>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-    <div class="container-fluid">
-      <hr class="hr-decoration">
-    </div>
-    <div class="row">
-      <div class="col-12">
-        <p class="text-center">© 2022 The Honey Hive</p>
+      <div class="container-fluid">
+        <hr class="hr-decoration">
       </div>
-    </div>
+
+    <!-- Brand -->
+      <div class="row">
+        <div class="col-12">
+          <p class="text-center">© 2022 The Honey Hive</p>
+        </div>
+      </div>
   </footer>
 
   {% block postloadjs %}

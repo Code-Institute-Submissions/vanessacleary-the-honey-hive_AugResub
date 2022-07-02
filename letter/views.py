@@ -1,8 +1,9 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 from . forms import SubscibersForm, MailMessageForm
-from django.contrib import messages
+from . models import Subscribers
 from django.contrib import messages
 from django.core.mail import send_mail
+# from django_pandas.io import read_frame
 
 # Create your views here.
 
