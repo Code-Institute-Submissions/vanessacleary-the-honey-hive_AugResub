@@ -15,51 +15,43 @@
         </li>
         <!-- Candles tab on nav bar -->
         <li class="nav-item dropdown">
-            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="clothing-link"
+            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="candles-link"
                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Candles
             </a>
-            <div class="dropdown-menu border-0" aria-labelledby="clothing-link">
+            <div class="dropdown-menu border-0" aria-labelledby="candles-link">
                 <a href="{% url 'products' %}?category=candles" class="dropdown-item">All candles</a>
-                <a href="{% url 'products' %}?category=original" class="dropdown-item">Original beeswax candles</a>
-                <a href="{% url 'products' %}?category=scented" class="dropdown-item">Scented candles</a>
             </div>
         </li>
         <!-- Skincare tab on nav bar -->
         <li class="nav-item dropdown">
-            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="homeware-link"
+            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="skincare-link"
                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Skincare
             </a>
-            <div class="dropdown-menu border-0" aria-labelledby="homeware-link">
-                <a href="{% url 'products' %}?category=lip_balm" class="dropdown-item">Lip Balm</a>
-                <a href="{% url 'products' %}?category=cleansers" class="dropdown-item">Cleansers</a>
-                <a href="{% url 'products' %}?category=soap" class="dropdown-item">Soap</a>
-                <a href="{% url 'products' %}?category=body" class="dropdown-item">Body</a>
+            <div class="dropdown-menu border-0" aria-labelledby="skincar-link">
+                <a href="{% url 'products' %}?category=skincare" class="dropdown-item">Skin care</a>
             </div>
         </li>
 
     <!-- Vegan wraps tab on nav bar -->
     <li class="nav-item dropdown">
-        <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="homeware-link"
+        <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="vegan_wraps-link"
             data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             Vegan Wraps
         </a>
-        <div class="dropdown-menu border-0" aria-labelledby="homeware-link">
+        <div class="dropdown-menu border-0" aria-labelledby="vegan_wraps-link">
             <a href="{% url 'products' %}?category=vegan_wraps" class="dropdown-item">Vegans wraps</a>
         </div>
     </li>
         <!-- Giftset tab on nav bar -->
         <li class="nav-item dropdown">
-            <a class="logo-font font-weight-bold nav-link text-black" href="#" id="specials-link" data-toggle="dropdown"
+            <a class="logo-font font-weight-bold nav-link text-black" href="#" id="giftset-link" data-toggle="dropdown"
                 aria-haspopup="true" aria-expanded="false">
                 Gift Sets
             </a>
-            <div class="dropdown-menu border-0" aria-labelledby="specials-link">
-                <a href="{% url 'products' %}?category=new_arrivals" class="dropdown-item">New Arrivals</a>
-                <a href="{% url 'products' %}?category=deals" class="dropdown-item">Deals</a>
-                <a href="{% url 'products' %}?category=clearance" class="dropdown-item">Clearance</a>
-                <a href="{% url 'products' %}?category=new_arrivals,deals,clearance" class="dropdown-item">All Specials</a>
+            <div class="dropdown-menu border-0" aria-labelledby="giftset-link">
+                <a href="{% url 'products' %}?category=giftsets" class="dropdown-item">Giftsets</a>
             </div>
         </li>
     </ul>

@@ -173,6 +173,12 @@ input[name='q']::placeholder {
     overflow-y: auto;
 }
 
+/* Contact */
+
+btn-contact {
+    color: #fdb800;!important;
+}
+
 /* Footer */
 footer {
     bottom: 0;
