@@ -1,13 +1,17 @@
-html {
+/* html {
     height: 100%;
-}
+} */
 
 body {
-    background: url('/media/honey_hero_img.jpg') no-repeat center center fixed;
+    /* background: url('/media/honey_hero_img.jpg') no-repeat center center fixed; */
     background-size: cover;
     height: calc(100vh - 164px);
     color: #555;
     font-family: 'Lato';
+}
+
+.title-container {
+    background: url('/media/honey_hero_img.jpg') no-repeat center;
 }
 
 /* from Bulma */
@@ -17,6 +21,10 @@ body {
     justify-content: center;
     height: 1.5rem;
     width: 1.5rem;
+}
+
+.text-logo {
+    color: #fdb800;
 }
 
 .logo-font {
@@ -185,7 +193,7 @@ footer {
     background-color: #000;
     color: #fff;
     padding: 20px;
-    /* position: absolute; */
+   position: absolute;
     width: 100%;
 }
 

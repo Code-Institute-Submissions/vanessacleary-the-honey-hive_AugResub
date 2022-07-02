@@ -1,27 +1,27 @@
 {% extends "base.html" %}
 {% load static %}
 
-{% block page_header %}
-<div class="container header-container">
-    <div class="row">
-        <div class="col"></div>
+
+{% block image %}
+<div class="title-container">
+  <div class="row">
+    <div class="col-12 text-center">
+        <h1 class="text-left"> Natural and organic bee products </h1>
+        <h4>
+            <a href="{% url 'products' %}" class="shop-now-button btn btn-lg rounded-0 text-uppercase py-3">Shop Now</a>
+        </h4>
     </div>
+  </div>
 </div>
 {% endblock %}
 
 {% block content %}
-<div class="container h-100">
-    <div class="row h-100">
-        <div class="col-7 col-md-6 my-auto">
-            <h1 class="display-4 logo-font text-black">
-                NATURAL OGANIC & Irish
-            </h1>
-            <div class="my-5">
-                <h4>
-                    <a href="{% url 'products' %}" class="shop-now-button btn btn-lg rounded-0 text-uppercase py-3">Shop Now</a>
-                </h4>
-            </div>
-        </div>
-    </div>
-</div>
+<h2 class="text-center mt-4"> About Us </h2>
+<div class="row">
+  <div class="col-10 offset-1"> 
+    <p>Donec sit amet urna ultricies, malesuada libero sit amet, aliquam mi. Nam suscipit elit pretium nisl lacinia, vulputate dapibus ligula viverra. Morbi purus mauris, molestie non neque ut, posuere pulvinar arcu. Vestibulum condimentum, enim a luctus lobortis, turpis erat rhoncus arcu, in viverra enim augue ut purus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Aliquam faucibus arcu sed elit eleifend elementum. Maecenas quis nisi risus. Ut pulvinar quis turpis ac finibus. Morbi imperdiet condimentum eleifend. Cras bibendum leo eu mauris elementum, sit amet condimentum ex tincidunt. Nunc tempor urna mi, et sodales augue ultrices ut. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac 
+        turpis egestas. Curabitur molestie tortor eleifend accumsan bibendum. Mauris mattis id felis eu luctus. 
+        Praesent eu mi lobortis, eleifend lorem vel, euismod urna.
+    </p>
+  </div>
 {% endblock %}
