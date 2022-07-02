@@ -1,27 +1,58 @@
 {% extends "base.html" %}
 {% load static %}
 
+{% block extra_css %}
+<link rel="stylesheet" href="{% static 'home/css/home.css' %}">
+{% endblock %}
 
-{% block image %}
-<div class="title-container">
-  <div class="row">
-    <div class="col-12 text-center">
-        <h1 class="text-left"> Natural and organic bee products </h1>
-        <h4>
-            <a href="{% url 'products' %}" class="shop-now-button btn btn-lg rounded-0 text-uppercase py-3">Shop Now</a>
-        </h4>
+{% block page_header %}
+    <div class="container header-container">
+        <div class="row">
+            <div class="col"></div>
+        </div>
     </div>
-  </div>
-</div>
 {% endblock %}
 
 {% block content %}
-<h2 class="text-center mt-4"> About Us </h2>
-<div class="row">
-  <div class="col-10 offset-1"> 
-    <p>Donec sit amet urna ultricies, malesuada libero sit amet, aliquam mi. Nam suscipit elit pretium nisl lacinia, vulputate dapibus ligula viverra. Morbi purus mauris, molestie non neque ut, posuere pulvinar arcu. Vestibulum condimentum, enim a luctus lobortis, turpis erat rhoncus arcu, in viverra enim augue ut purus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Aliquam faucibus arcu sed elit eleifend elementum. Maecenas quis nisi risus. Ut pulvinar quis turpis ac finibus. Morbi imperdiet condimentum eleifend. Cras bibendum leo eu mauris elementum, sit amet condimentum ex tincidunt. Nunc tempor urna mi, et sodales augue ultrices ut. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac 
-        turpis egestas. Curabitur molestie tortor eleifend accumsan bibendum. Mauris mattis id felis eu luctus. 
-        Praesent eu mi lobortis, eleifend lorem vel, euismod urna.
-    </p>
+<header class="bgimg w3-display-container w3-grayscale-min" id="home">
+  <!-- <div class="w3-display-bottomleft w3-center w3-padding-large w3-hide-small">
+    <span class="w3-tag">Something about Bees 
+    </span>
+  </div> -->
+  <div class="text-center">
+    <span class="w3-text-white text-center" style="font-size:70px">The Honey Hive</span>
+
   </div>
+  <div class="text-center">
+    
+    <span class="w3-text-white text-center" style="font-size:50px"> Natural and Organic Bee products</span>
+  </div>
+
+<div class="text-center">
+  <h4>
+    <a href="{% url 'products' %}" class="shop-now-button btn btn-lg rounded-0 text-uppercase py-3">Shop Now</a>
+</h4>
+</div>
+
+   <div class="w3-display-bottomright w3-center w3-padding-large">
+    <span class="w3-text-white">PARTY PARTY</span>
+  </div> 
+  
+</header>
+
+<!-- About Container -->
+<div class="w3-container" id="about">
+  <div class="w3-content" style="max-width:700px">
+    <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">About The Honey Hive</span></h5>
+    <p>blabla by Mr. Smith in lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    <p>>blabla by Mr. Smith in lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    <div class="w3-panel w3-leftbar w3-light-grey">
+      <p><i>>blabla by Mr. Smith in lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</i></p>
+      <p>>blabla by Mr. Smith in lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    </div>
+    <img src="/w3images/coffeeshop.jpg" style="width:100%;max-width:1000px" class="w3-margin-top">
+    <p><strong>Something</strong> Somehting</p>
+    <p><strong>Something</strong> Something</p>
+  </div>
+</div>
 {% endblock %}
