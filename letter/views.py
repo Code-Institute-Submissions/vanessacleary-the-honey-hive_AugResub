@@ -13,7 +13,7 @@ def letter(request):
         if form.is_valid():
             form.save()
             messages.success(request, "Subscription Successful")
-            return redirect(reverse('home'))
+            return redirect(('home')) # I removed reverse form here because it was causing an issue - should I include it againa and try resolve. 
     else:
         form = SubscibersForm()
     context = {
