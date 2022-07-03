@@ -10,7 +10,7 @@
 * Ages 18+
 * Retail purchases not commercial wholesale
 
-## User Stories
+## USER STORIES
 
 ### As a first time visitor:
 * I want to easily navigate throughout the site.
@@ -64,3 +64,65 @@
 * I want to be able to delete a user.
 * I want to be able to make another user admin.
 * I want to be notified when a user fills out the contact form, so I don't have to check the admin portal constantly.
+
+
+
+## **TECHNOLOGY USED**
+
+<details>
+<summary> Languages and Libraries</summary>
+
+- [Django](https://www.djangoproject.com/) - Python Framework
+- [HTML5](https://developer.mozilla.org/en-US/docs/Glossary/HTML5) - Programming Language
+- [CSS 3](https://developer.mozilla.org/en-US/docs/Web/CSS) - Programming Language
+- [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript) - Programming Language
+- [Python](https://www.python.org/) - Programming Language
+- [Jinja](https://jinja.palletsprojects.com/en/3.0.x/) - Template Language
+- [jQuery](https://jquery.com/) - JavaScript Library
+- [Bootstrap v4](https://getbootstrap.com/) - Library Import
+- [Google Fonts](https://fonts.google.com/) - Typography Import
+- [Font Awesome](https://fontawesome.com/) - Icon provider
+- [Hover.CSS](https://ianlunn.github.io/Hover/) - Hover.CSS
+
+</details>
+
+<details>
+<summary> IDE and Version Control</summary>
+
+- [Git Pod](https://gitpod.io/) - IDE (Integrated Development Environment)
+- [Git](https://git-scm.com/) - Version Control Tool
+- [Github](https://github.com/) - Cloud based hosting service to manager my Git Repositories
+- [Code Institute GitPod Template](https://github.com/Code-Institute-Org/gitpod-full-template) - Provides GitPod extensions to help with code production
+</details>
+
+<details>
+<summary> Design and Development</summary>
+
+- [Google Chrome Development Tools](https://developer.chrome.com/docs/devtools/) - Design/Development Tools
+- [Balsamiq](https://balsamiq.com/) - Wireframe designer software
+- [Coolors](https://coolors.co/) - Colour scheme generator
+- [Lucid App](https://lucid.app/) - Diagram creator
+- [Draw.io](https://app.diagrams.net/) - Flow chart creator
+</details>
+
+<details>
+<summary> Validation and Testing</summary>
+
+- [CSS Beautifier](https://www.freeformatter.com/css-beautifier.html) - Beautifying CSS Code
+- [JavaScript Validator](https://beautifytools.com/javascript-validator.php) - Validating JS code
+- [Am I Responsive?](http://ami.responsivedesign.is/) - Webpage Breakpoint visualizer and image generator
+- [Black](https://black.readthedocs.io/en/stable/)- Code Formatter
+- [W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/)
+- [Browser Stack Responsive Design Tester](https://www.browserstack.com/responsive)
+- [Media Genesis RESPONSIVE WEB DESIGN CHECKER](https://responsivedesignchecker.com/)
+- [Chrome Dev Tools](https://developer.chrome.com/docs/devtools/)
+- [Lighthouse](https://developers.google.com/web/tools/lighthouse)
+- [pylint](https://pylint.org/)
+</details>
+
+<details>
+<summary> Documentation</summary>
+
+- [Markdown Table Generator](https://www.tablesgenerator.com/markdown_tables) - Markdown Table Production
+- [Table Converter](https://tableconvert.com/excel-to-markdown) - Excel to Markdown table converter 
+</details>
