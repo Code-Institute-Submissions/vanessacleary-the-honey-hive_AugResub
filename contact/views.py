@@ -55,7 +55,7 @@ def contact(request):
             try:
                 profile = UserProfile.objects.get(user=request.user)
                 contact_form = ContactForm(initial={
-                    'full_name': profile.default_full_name,
+                   # 'full_name': profile.default_full_name,
                     'email_from': profile.user.email,
                 })
             except UserProfile.DoesNotExist:

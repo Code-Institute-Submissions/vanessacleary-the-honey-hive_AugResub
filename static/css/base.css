@@ -92,7 +92,7 @@ body {
 .btn-black:hover,
 .btn-black:active,
 .btn-black:focus {
-    background: red;
+    background: #ffc107;
     color: white;
 }
 
