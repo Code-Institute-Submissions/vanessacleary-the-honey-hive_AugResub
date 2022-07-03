@@ -56,7 +56,7 @@ def contact(request):
                 profile = UserProfile.objects.get(user=request.user)
                 contact_form = ContactForm(initial={
                    # 'full_name': profile.default_full_name,
-                    'full_name': profile.user.username, # the above field did not work - added new model and migrated and this option now works
+                    'full_name': profile.user.username, # the above field caused an issue and would not allow me to submit a contact form (bug only came out as I previosly could submit a contact form) - I added new model and migrated and this option now works - I updated line 15 in profile/models
                     'email_from': profile.user.email,
                 })
             except UserProfile.DoesNotExist:
