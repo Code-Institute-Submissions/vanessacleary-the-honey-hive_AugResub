@@ -74,7 +74,7 @@ def contact(request):
 def send_confirmation_email(user_enquiry):
     """ Send a confirmation email to user following successful enquiry """
     cust_email = user_enquiry.email_from
-    subject = 'Thank you for contacting Surf the Wave'
+    subject = 'Thank you for contacting The Honey Hive'
     body = render_to_string(
         'contact/confirmation_emails/confirmation_email_body.txt',
         {'contact': user_enquiry})
