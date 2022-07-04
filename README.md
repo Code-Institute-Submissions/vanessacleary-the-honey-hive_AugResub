@@ -1,3 +1,8 @@
+Link to live project.
+
+This is the final portfolio
+
+
 ## Site Owner Goals
 
 * Promote candle shop business and increase sales candles
