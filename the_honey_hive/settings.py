@@ -30,7 +30,8 @@ SECRET_KEY = os.environ.get('SECRET_KEY', '')
 
 DEBUG = True
 
-ALLOWED_HOSTS = ['the-honey-hive.heroku.com', 'localhost']
+ALLOWED_HOSTS = ['the-honey-hive.herokuapp.com', 'localhost']
+
 
 
 # Application definition
