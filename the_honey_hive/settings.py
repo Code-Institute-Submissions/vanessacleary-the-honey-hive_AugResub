@@ -30,7 +30,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY', '')
 
 DEBUG = True
 
-ALLOWED_HOSTS = ['the-honey-hive.heroku.com', 'local host']
+ALLOWED_HOSTS = ['the-honey-hive.heroku.com', 'localhost']
 
 
 # Application definition
@@ -180,6 +180,7 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 STATICFILES_DIRS = (os.path.join(BASE_DIR, 'static'),)
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')

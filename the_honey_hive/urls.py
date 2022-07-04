@@ -28,4 +28,7 @@ urlpatterns = [
     path('contact/', include('contact.urls')),
     path('letter/', include('letter.urls')),
    path('mail_letter/', include('letter.urls')),
-] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+]
+
+urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
+urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
