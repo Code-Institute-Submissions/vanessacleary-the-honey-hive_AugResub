@@ -29,14 +29,14 @@
                     <div class="col-12 mt-3">
                         <p> Get exculsive offers and be the first to know about new products! </p>
                     </div>
-
-                    <form method="POST">
-                        {% csrf_token %}
-                        {{ form|crispy }}
-                        <input class="btn shop-now-button btn btn-md rounded-pill btn-block hvr-grow text-center"
-                            type="submit" value="Subscribe">
-                    </form>
-
+                    <div class="col-12 text-center">
+                        <form method="POST">
+                            {% csrf_token %}
+                            {{ form|crispy }}
+                            <input class="btn shop-now-button btn btn-md rounded-pill btn-block hvr-grow text-center"
+                                type="submit" value="Subscribe">
+                        </form>
+                    </div>
                 </div>
             </div>
         </div>

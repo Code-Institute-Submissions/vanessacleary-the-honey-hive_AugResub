@@ -1,19 +1,18 @@
-from django.shortcuts import render, redirect
+from django.shortcuts import render, redirect, reverse
 from . forms import SubscibersForm, MailMessageForm
 from . models import Subscribers
 from django.contrib import messages
 from django.core.mail import send_mail
 # from django_pandas.io import read_frame
 
-# Create your views here.
 
-def letter(request):
+def handle_subscription(request):
     if request.method == "POST":
         form = SubscibersForm(request.POST)
         if form.is_valid():
             form.save()
             messages.success(request, "Subscription Successful")
-            return redirect(('home')) # I removed reverse form here because it was causing an issue - should I include it againa and try resolve.  
+            return redirect(reverse('home'))
     else:
         form = SubscibersForm()
     context = {

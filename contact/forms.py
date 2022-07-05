@@ -22,7 +22,7 @@ class ContactForm(forms.ModelForm):
         }
         self.fields['full_name'].widget.attrs['autofocus'] = True
         for field in self.fields:
-            self.fields[field].label = labels[field] + ""
+            self.fields[field].label = labels[field]
             if self.fields[field].required:
                 placeholder = f'{labels[field]} *'
             else:

@@ -6,6 +6,11 @@ from django.conf import settings
 from django.template.loader import render_to_string
 from profiles.models import UserProfile
 from .forms import ContactForm
+from .models import Contact
+import logging
+
+
+log = logging.getLogger(__name__)
 
 
 def contact(request):
@@ -23,22 +28,20 @@ def contact(request):
         # If form valid, save enquiry
         if contact_form.is_valid():
             user_enquiry = contact_form.save(commit=False)
-            name = contact_form.cleaned_data['full_name']
-            email = contact_form.cleaned_data['email_from']
-            enquiry = contact_form.cleaned_data['enquiry']
             if request.user.is_authenticated:
                 user = User.objects.get(username=request.user)
                 user_enquiry.user = user
             user_enquiry.save()
-            # Send confirmation email to user
-            send_confirmation_email(user_enquiry)
-            # Send email to admin notifying of new contact message
-            send_mail(
-                f"You have received an enquiry from { name }",
-                enquiry,
-                email,
-                [settings.DEFAULT_FROM_EMAIL],
-                )
+
+            try:
+                # Send confirmation email to user
+                log.info("Sending email")
+                send_confirmation_email(user_enquiry)
+            except Exception as e:
+                if request.user.is_authenticated and request.is_superuser:
+                    messages.error(request, 'There was an error with the enquiry. Check Logs.')
+                log.exception(f"Exception occurred when sending email: {str(e)}")
+
             messages.success(request,
                              'Your enquiry has been sent.'
                              'Check your emails for a confirmation')
@@ -71,7 +74,7 @@ def contact(request):
         return render(request, template, context)
 
 
-def send_confirmation_email(user_enquiry):
+def send_confirmation_email(user_enquiry: Contact):
     """ Send a confirmation email to user following successful enquiry """
     cust_email = user_enquiry.email_from
     subject = 'Thank you for contacting The Honey Hive'
@@ -84,4 +87,11 @@ def send_confirmation_email(user_enquiry):
         body,
         settings.DEFAULT_FROM_EMAIL,
         [cust_email]
+    )
+    # Send email to admin notifying of new contact message
+    send_mail(
+        f"You have received an enquiry from { user_enquiry.full_name }",
+        user_enquiry.enquiry,
+        user_enquiry.email_from,
+        [settings.DEFAULT_FROM_EMAIL],
     )
