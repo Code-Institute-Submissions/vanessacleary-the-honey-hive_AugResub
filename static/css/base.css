@@ -77,11 +77,6 @@ body {
     color: white;
 }
 
-/* 
-.btn-black {
-    background: black;
-    color: white;
-} */
 
 .btn-outline-black {
     background: white;
@@ -367,6 +362,13 @@ footer a:hover {
     }
 }
 
+.bag-icon {
+    color:#ffc107;
+}
+
+.user-icon {
+    color:#ffc107;
+}
 /* pad the top a bit when navbar is collapsed on mobile */
 @media (max-width: 991px) {
     .header-container {
