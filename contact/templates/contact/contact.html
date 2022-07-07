@@ -27,8 +27,8 @@
                 {% csrf_token %}
                 {{ contact_form|crispy }}
                 <div class="text-center">
-                    <button class="btn btn-contact" type="submit" >Send</button>
-                    <a href="{% url 'home' %}" class="btn btn-grey" aria-label="Link to go back to home page">
+                    <button class="btn btn-contact btn-black rounded-pill" type="submit" >Send</button>
+                    <a href="{% url 'home' %}" class="btn btn-black rounded-pill aria-label="Link to go back to home page">
                         Cancel
                     </a>
                 </div>
