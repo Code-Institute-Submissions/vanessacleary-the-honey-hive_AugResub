@@ -1,6 +1,43 @@
 Link to live project.
 
-This is the final portfolio
+
+This is the final portfolio project that will finalize the Full Stack Software Development Program at the Code Institute.
+
+The requirements were to build a full-stack framework based around business logic used to control a centrally-owned dataset" using the technologies: HTML, CSS, JavaScript, Python+Django with a relational database and using the Stripe payments system.
+
+Based on the above requirements, this ecommerce website was created to showcase a variety of Beeswax products that exist on the market in one place. The Honey Hive works with independent and small creators and businesses to build the products & brands for the website.
+
+Beeswax products have been increasing in popularity over the last number of years but there is a gap in the market for a website that sells a host of brands of all the different products and brands. 
+
+## **Project goals** 
+
+* Develop an e-commerce website to sell multiple beeswax brand products in one place.
+* Create an Admin access account on the platform to allow the company to make the required changes to the data sets in the database
+* Produce a secure and comprehensive backend structure, including database hosting any data stored online
+* Build a smart and responsive web app to enable users to view displayed information easily
+* Handle any errors in such a way to help the user understand the issue and provide an easy form of contact if any error should persist
+
+## **Business goals**
+
+* To sell beeswax products 
+* To promote the product and brand range of beeswax products to new and existing customers with the hope of increasing basket value
+* To give new and existing customer background about The HoneyHive by having and about section
+* To allow the TheHoneyHive to grow by easily having the ability to add new products
+
+## **Demographics**  
+
+* All genders and ethnicities
+* Ages 18+
+* Retail purchases not commercial wholesale
+ 
+
+## **Value to the Users and Customers**
+
+* Easy access to  beeswax brands and products 
+* Friendly and easy to use UI 
+* Secure storage of personal information 
+* See order information
+* Sign up for a newsletter to be kept up to date 
 
 
 ## Site Owner Goals
@@ -70,9 +107,13 @@ This is the final portfolio
 * I want to be able to make another user admin.
 * I want to be notified when a user fills out the contact form, so I don't have to check the admin portal constantly.
 
+## Wireframes
 
+* Desktop 
+* Mobile
+* Tablet
 
-## **TECHNOLOGY USED**
+## **Technologies used**
 
 <details>
 <summary> Languages and Libraries</summary>
@@ -134,7 +175,7 @@ This is the final portfolio
 
 
 
-## Testing First time User Stories 
+## **Testing First time User Stories**
  
   * I want to easily navigate throughout the site.
     * The website has a navbar that will allow all users to navigate around the website on any device 
@@ -172,7 +213,7 @@ This is the final portfolio
 
 ---------------------------------------------------------------------------------------------------------------------------
 
-## Testing Unregistereds User Stories 
+## **Testing Unregistereds User Stories** 
 
 * I want to be able to search and filter products easily and efficiently.
     * A searchbar input field allows users to search by product, description or category. 
@@ -219,5 +260,128 @@ This is the final portfolio
     * Stripe card payment section is available for card payments
 
 ---------------------------------------------------------------------------------------------------------------------------
+
+* I want to be able to view a confirmation of my order once the checkout process is complete.
+    * The checkout success page displays an order confirmation for the user.
+
+---------------------------------------------------------------------------------------------------------------------------
+
+## **Testing Registered User Stories** 
+
+* I want to be able to receive an email confirmation of my order. 
+    * Following a successful order an order confirmation email is sent.
+
+---------------------------------------------------------------------------------------------------------------------------
+
+* I want to be able to register easily for an account.
+    * In the user dropdown menu, users can select to register for an account
+    * The register account form is simple and clearly labelled
+
+---------------------------------------------------------------------------------------------------------------------------
+
+* I want to be able to receive a confirmation email upon registration.
+    * Users receive a confirmation email to verify their email address
+
+---------------------------------------------------------------------------------------------------------------------------
+
+* I want to be able to view my personalized profile.
+    * Users can view their profile, which has personal information and order history saved
+
+---------------------------------------------------------------------------------------------------------------------------
+
+* I want to be able to save and edit personal information on my profile.
+    * Users can save default information to their profile
+    * Users can edit this at any point
+
+---------------------------------------------------------------------------------------------------------------------------
+
+* I want to be able to view my order history.
+    * On the users profile page, users can view their order history
+
+---------------------------------------------------------------------------------------------------------------------------
+
+* I want to be able to login and logout with ease.
+    * Users select the dropdown to login, which takes them to the login form. 
+    * Users can select the dropdown to logout, or if on the profile page their is a logout button.
+
+---------------------------------------------------------------------------------------------------------------------------
+
+* I want to be able to change my password to keep my account secure.
+    * Under 'My Account' on the profile page, users can change their password.
+
+---------------------------------------------------------------------------------------------------------------------------
+
+* I want to be able to reset my password if I forget it.
+    * On the login page, users can click a link to reset their password if they have forgotten it.
+
+---------------------------------------------------------------------------------------------------------------------------
+
+* I want to be able to delete my account.
+    * Under 'My Account' on the profile page, users can delete their account
+
+---------------------------------------------------------------------------------------------------------------------------
+
+## **Testing Returning User Stories**
+
+* I want to be able to find social media links.
+    * In the footer, across all pages, users can find links to the sites social media accounts
+
+---------------------------------------------------------------------------------------------------------------------------
+
+* I want to be able to contact the site owner if I have any queries.
+    * In the footer, across all pages, their is a link to the contact form
+
+---------------------------------------------------------------------------------------------------------------------------
+
+* I want to enjoy using the site without never ending scrolling.
+    * In the footer, across all pages, their is a 'Back to top' link
+
+---------------------------------------------------------------------------------------------------------------------------
+
+## **Testing Superuser Userstories** 
+
+* I want to be able to add new products.
+    * From the navbar dropdown or in the profile page, superusers can add new products
+
+---------------------------------------------------------------------------------------------------------------------------
+
+* I want to be able to edit or delete existing products.
+    * On the products page and each product detail page, edit and delete links allow superusers to edit or delete products. 
+
+---------------------------------------------------------------------------------------------------------------------------
+
+* I want to be able to add new categories.
+    * In the admin portal, accessed from the admin navlink, superusers can add new categories. 
+
+---------------------------------------------------------------------------------------------------------------------------
+
+* I want to be able to access the Django admin portal easily
+    * In the superuser user option dropdown there is a link to the admin portal
+
+---------------------------------------------------------------------------------------------------------------------------
+
+* I want to be able to delete a user.
+    * In the admin portal, superusers can delete any user.
+
+---------------------------------------------------------------------------------------------------------------------------
+
+* I want to be able to make another user admin.
+    * In the admin portal, superusers can make other users admin
+
+---------------------------------------------------------------------------------------------------------------------------
+
+* I want to be notified when a user fills out the contact form, so I don't have to check the admin portal constantly.
+
+
+## **Testing User stories Over view**
+
+
+|  User Story | Comments  |
+|---|---|
+| As a first time visitor:  | After troughly testing these stories it is clear a first time user of the site will be able to use the site as intended. The user stories set out initally have been statisfied  |
+|  As an unregistered visitor: | After troughly testing these stories it is clear a first time user of the site will be able to use the site as intended. The user stories set out initally have been statisfied   |
+|  As a registered visitor: | After troughly testing these stories it is clear a first time user of the site will be able to use the site as intended. The user stories set out initally have been statisfied  |
+| As a returning visitor: | After troughly testing these stories it is clear a first time user of the site will be able to use the site as intended. The user stories set out initally have been statisfied |
+| As a superuser: | After troughly testing these stories it is clear a first time user of the site will be able to use the site as intended. The user stories set out initally have been statisfied |
 
 
