@@ -134,15 +134,7 @@ This is the final portfolio
 
 
 
-## Testing User Stories 
-
-### User Story:
-    * I want to easily navigate throughout the site.
-        * The website has a navbar that will allow all users to navigate around the website on any device 
-        * ![](readme/assets/testing-images/nav.png)
-        * ![](readme/assets/testing-images/nav-mobile.png)
-
-## Testing User Stories 
+## Testing First time User Stories 
  
   * I want to easily navigate throughout the site.
     * The website has a navbar that will allow all users to navigate around the website on any device 
@@ -164,13 +156,60 @@ This is the final portfolio
 ---------------------------------------------------------------------------------------------------------------------------
 
 * I want the site to be accessible.
- * All anchor links have aria-labels, images have alt attributes and the colours pass the Lighthouse accessibility checks. 
- * Placeholders and form labels have been used throughout to ensure accesbility is available throughout the site. 
+    * All anchor links have aria-labels, images have alt attributes and the colours pass the Lighthouse accessibility checks. 
+    * Placeholders and form labels have been used throughout to ensure accesbility is available throughout the site. 
 
 ---------------------------------------------------------------------------------------------------------------------------
 
 * I want the site to be responsive across all devices.
- * Throughout development responsiveness has been considered. 
- * Using Bootstrap and media queries the site is accessible across all devices.
+    * Throughout development responsiveness has been considered. 
+    * Using Bootstrap and media queries the site is accessible across all devices.
 
 ---------------------------------------------------------------------------------------------------------------------------
+
+### Overview of First time user stories 
+<p> the stories have been staisfied for each story set out for first time users </p>
+
+---------------------------------------------------------------------------------------------------------------------------
+
+## Testing Unregistereds User Stories 
+
+* I want to be able to search and filter products easily and efficiently.
+    * A searchbar input field allows users to search by product, description or category. 
+    * Product category badges allow users to filter which category they want to look at. 
+    * Navbar dropdown menus have categories listed so users can easily filter which products users want to look at. 
+
+---------------------------------------------------------------------------------------------------------------------------
+
+* I want to be able to sort and view products according to type, price and name.
+    * The sort selector dropdown allows users to sort products based on price, name or category
+
+---------------------------------------------------------------------------------------------------------------------------
+
+* I want to be able to view product details so I can find information about price, size and description.
+    * The product detail page displays product information clearly for the user
+
+---------------------------------------------------------------------------------------------------------------------------
+
+* I want to be able to add products to my shopping basket.
+    * On the product detail page an 'Add to basket' button allows users to add products to their bags.
+
+---------------------------------------------------------------------------------------------------------------------------
+
+* I want to be able to view my shopping basket.
+    * Users can click on shopping basket icon in navbar or 'Proceed to basket' button on toast message. 
+    * The basket page displays all products added to basket and an order summary.
+
+---------------------------------------------------------------------------------------------------------------------------
+
+* I want to be able to edit my shopping basket.
+    * A quantity selector dropdown allows users to change the quantity and use the update link to update the amount. 
+    * The remove link allows users to remove item completely from their basket
+
+---------------------------------------------------------------------------------------------------------------------------
+
+* I want to be able to view the total cost of my basket.
+    * In the shopping basket page the total cost with breakdown of order total and delivery cost are displayed. 
+    * Total cost of basket is also displayed in toast messages if the user is not on the basket or profile pages. 
+
+
