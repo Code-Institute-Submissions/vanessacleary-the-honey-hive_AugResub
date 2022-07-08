@@ -212,4 +212,12 @@ This is the final portfolio
     * In the shopping basket page the total cost with breakdown of order total and delivery cost are displayed. 
     * Total cost of basket is also displayed in toast messages if the user is not on the basket or profile pages. 
 
+---------------------------------------------------------------------------------------------------------------------------
+
+* I want to be able to complete the checkout process and be able to enter payment information easily.
+    * The checkout page displays checkout form. This is clearly labelled with input labels and placeholders.
+    * Stripe card payment section is available for card payments
+
+---------------------------------------------------------------------------------------------------------------------------
+
 
