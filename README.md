@@ -131,3 +131,46 @@ This is the final portfolio
 - [Markdown Table Generator](https://www.tablesgenerator.com/markdown_tables) - Markdown Table Production
 - [Table Converter](https://tableconvert.com/excel-to-markdown) - Excel to Markdown table converter 
 </details>
+
+
+
+## Testing User Stories 
+
+### User Story:
+    * I want to easily navigate throughout the site.
+        * The website has a navbar that will allow all users to navigate around the website on any device 
+        * ![](readme/assets/testing-images/nav.png)
+        * ![](readme/assets/testing-images/nav-mobile.png)
+
+## Testing User Stories 
+ 
+  * I want to easily navigate throughout the site.
+    * The website has a navbar that will allow all users to navigate around the website on any device 
+        * Desktop Nav
+        ![](readme/assets/testing-images/nav.png)
+
+        * Mobile Nav
+        ![](readme/assets/testing-images/nav-mobile.png)
+---------------------------------------------------------------------------------------------------------------------------
+ * I want to understand the purpose of the site easily.
+    * On the homepage there is an 'About' section which tells the story about what The HoneyHive is about 
+    * The Homescreen image allow website visitors about what the purpose of the website.
+---------------------------------------------------------------------------------------------------------------------------
+
+* I expect an attractive site that contributes to my good experience.
+    * The colours, style and layout have been choosen to enure a good user expierence. 
+    * Design aspects and products have been taken from other Beeswas websites - see credits for more information
+
+---------------------------------------------------------------------------------------------------------------------------
+
+* I want the site to be accessible.
+ * All anchor links have aria-labels, images have alt attributes and the colours pass the Lighthouse accessibility checks. 
+ * Placeholders and form labels have been used throughout to ensure accesbility is available throughout the site. 
+
+---------------------------------------------------------------------------------------------------------------------------
+
+* I want the site to be responsive across all devices.
+ * Throughout development responsiveness has been considered. 
+ * Using Bootstrap and media queries the site is accessible across all devices.
+
+---------------------------------------------------------------------------------------------------------------------------
