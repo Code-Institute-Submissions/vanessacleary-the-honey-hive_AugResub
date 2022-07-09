@@ -285,8 +285,6 @@ Beeswax products have been increasing in popularity over the last number of year
 
       ![](readme/assets/testing-images/order-success.png)
 
-
-
 * I want to be able to receive an email confirmation of my order. 
     * Following a successful order an order confirmation email is sent.
 
@@ -298,7 +296,10 @@ Beeswax products have been increasing in popularity over the last number of year
 
 * I want to be able to register easily for an account.
     * In the user dropdown menu, users can select to register for an account
+        ![](readme/assets/testing-images/signin-dropdown.png)
+
     * The register account form is simple and clearly labelled
+       ![](readme/assets/testing-images/sign-up.png)
 
 ---------------------------------------------------------------------------------------------------------------------------
 
@@ -309,17 +310,23 @@ Beeswax products have been increasing in popularity over the last number of year
 
 * I want to be able to view my personalized profile.
     * Users can view their profile, which has personal information and order history saved
+          ![](readme/assets/testing-images/profile-page.png)
 
 ---------------------------------------------------------------------------------------------------------------------------
 
 * I want to be able to save and edit personal information on my profile.
     * Users can save default information to their profile
+      ![](readme/assets/testing-images/save-info.png)
+
     * Users can edit this at any point
+        ![](readme/assets/testing-images/update-information.png)
 
 ---------------------------------------------------------------------------------------------------------------------------
 
 * I want to be able to view my order history.
     * On the users profile page, users can view their order history
+              ![](readme/assets/testing-images/order-history.png)
+
 
 ---------------------------------------------------------------------------------------------------------------------------
 
