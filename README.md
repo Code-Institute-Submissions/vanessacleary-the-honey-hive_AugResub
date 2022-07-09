@@ -187,6 +187,8 @@ Beeswax products have been increasing in popularity over the last number of year
 ---------------------------------------------------------------------------------------------------------------------------
  * I want to understand the purpose of the site easily.
     * On the homepage there is an 'About' section which tells the story about what The HoneyHive is about 
+    ![](readme/assets/testing-images/about.png)
+
     * The Homescreen image allow website visitors about what the purpose of the website.
 ---------------------------------------------------------------------------------------------------------------------------
 
@@ -208,70 +210,91 @@ Beeswax products have been increasing in popularity over the last number of year
 
 ---------------------------------------------------------------------------------------------------------------------------
 
-### Overview of First time user stories 
-<p> the stories have been staisfied for each story set out for first time users </p>
-
----------------------------------------------------------------------------------------------------------------------------
-
 ## **Testing Unregistereds User Stories** 
 
 * I want to be able to search and filter products easily and efficiently.
     * A searchbar input field allows users to search by product, description or category. 
-    * Product category badges allow users to filter which category they want to look at. 
-    * Navbar dropdown menus have categories listed so users can easily filter which products users want to look at. 
+    ![](readme/assets/testing-images/search.png)
 
+    * Product category badges allow users to filter which category they want to look at. 
+
+      ![](readme/assets/testing-images/candles.png)  ![](readme/assets/testing-images/skincare.png)  ![](readme/assets/testing-images/vegan.png)
+
+    * Navbar dropdown menus have categories listed so users can easily filter which products users want to look at. 
+    ![](readme/assets/testing-images/dropdown.png)
 ---------------------------------------------------------------------------------------------------------------------------
 
 * I want to be able to sort and view products according to type, price and name.
     * The sort selector dropdown allows users to sort products based on price, name or category
+      ![](readme/assets/testing-images/sort.png)
 
 ---------------------------------------------------------------------------------------------------------------------------
 
 * I want to be able to view product details so I can find information about price, size and description.
     * The product detail page displays product information clearly for the user
+       ![](readme/assets/testing-images/details.png)
 
 ---------------------------------------------------------------------------------------------------------------------------
 
-* I want to be able to add products to my shopping basket.
+* I want to be able to add products to my shopping bag.
     * On the product detail page an 'Add to basket' button allows users to add products to their bags.
+      ![](readme/assets/testing-images/add-bag.png)
 
 ---------------------------------------------------------------------------------------------------------------------------
 
 * I want to be able to view my shopping basket.
-    * Users can click on shopping basket icon in navbar or 'Proceed to basket' button on toast message. 
-    * The basket page displays all products added to basket and an order summary.
+    * Users can click on shopping basket icon in navbar or 'go to secure checkout' button on toast message. 
+     ![](readme/assets/testing-images/bag-icon.png)
+
+        ![](readme/assets/testing-images/bag-toast.png)
+
+    * The bag page displays all products added to basket and an order summary.
+
+         ![](readme/assets/testing-images/bag-view.png)
 
 ---------------------------------------------------------------------------------------------------------------------------
 
 * I want to be able to edit my shopping basket.
     * A quantity selector dropdown allows users to change the quantity and use the update link to update the amount. 
     * The remove link allows users to remove item completely from their basket
+    ![](readme/assets/testing-images/selector.png)
 
 ---------------------------------------------------------------------------------------------------------------------------
 
 * I want to be able to view the total cost of my basket.
-    * In the shopping basket page the total cost with breakdown of order total and delivery cost are displayed. 
+    * In the shopping basket page the total cost with breakdown of order total and delivery cost are displayed.
+     ![](readme/assets/testing-images/costs.png) 
+
     * Total cost of basket is also displayed in toast messages if the user is not on the basket or profile pages. 
+    ![](readme/assets/testing-images/toast-cost.png)
 
 ---------------------------------------------------------------------------------------------------------------------------
 
 * I want to be able to complete the checkout process and be able to enter payment information easily.
     * The checkout page displays checkout form. This is clearly labelled with input labels and placeholders.
+       ![](readme/assets/testing-images/checkout-form.png)
+
     * Stripe card payment section is available for card payments
+        ![](readme/assets/testing-images/payment-form.png)
 
 ---------------------------------------------------------------------------------------------------------------------------
 
 * I want to be able to view a confirmation of my order once the checkout process is complete.
     * The checkout success page displays an order confirmation for the user.
+     ![](readme/assets/testing-images/order-page.png)
 
----------------------------------------------------------------------------------------------------------------------------
+      ![](readme/assets/testing-images/order-success.png)
 
-## **Testing Registered User Stories** 
+
 
 * I want to be able to receive an email confirmation of my order. 
     * Following a successful order an order confirmation email is sent.
 
+
+
 ---------------------------------------------------------------------------------------------------------------------------
+
+## **Testing Registered User Stories** 
 
 * I want to be able to register easily for an account.
     * In the user dropdown menu, users can select to register for an account
