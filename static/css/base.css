@@ -18,9 +18,9 @@ html {
   
  /* Nav bar */
   
- .navbar-light .navbar-nav .nav-link:hover {
+ /* .navbar-light .navbar-nav .nav-link:hover {
     color: #ffc107 !important;
-    z index: 100;
+    z-index: -0;
  }
   
  .hvr-grow {
@@ -38,14 +38,18 @@ html {
  .hvr-grow:focus,
  .hvr-grow:active {
     transform: scale(1.1);
- }
-  
+ } */
+   
  .delivery-banner {
     background-color: #0e1111; !important;
     padding-top: 5px;
-    /* z index of 100 */
+    /* index: -1;
+    position: absolute; */
  }
   
+ /* #delivery-banner h3 {
+   font-size: .9rem;
+}  */
  /* from Bulma */
  .icon {
     align-items: center;
