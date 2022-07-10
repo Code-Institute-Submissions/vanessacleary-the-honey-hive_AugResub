@@ -17,13 +17,13 @@ html {
 }
   
  /* Nav bar */
-  
- /* .navbar-light .navbar-nav .nav-link:hover {
+/*   
+  .navbar-light .navbar-nav .nav-link:hover {
     color: #ffc107 !important;
     z-index: -0;
- }
+ } */
   
- .hvr-grow {
+ /* .hvr-grow {
     display: inline-block;
     vertical-align: middle;
     transform: translateZ(0);
@@ -43,9 +43,7 @@ html {
  .delivery-banner {
     background-color: #0e1111; !important;
     padding-top: 5px;
-    /* index: -1;
-    position: absolute; */
- }
+ } 
   
  /* #delivery-banner h3 {
    font-size: .9rem;
