@@ -60,6 +60,7 @@ Beeswax products have been increasing in popularity over the last number of year
 * I expect an attractive site that contributes to my good experience.
 * I want the site to be accessible.
 * I want the site to be responsive across all devices.
+* I want to be able to subscribe to The HoneyHive newsletter
 
 ### As an unregistered visitor:
 * I want to be able to search and filter products easily and efficiently.
@@ -73,7 +74,6 @@ Beeswax products have been increasing in popularity over the last number of year
 * I want to be able to view a confirmation of my order once the checkout process is complete.
 * I want to be able to receive an email confirmation of my order.
 * I want to be able to register easily for an account.
-* I want to be able to access the blog posts.
 
 ### As a registered visitor:
 * I want to be able to receive a confirmation email upon registration.
@@ -81,13 +81,10 @@ Beeswax products have been increasing in popularity over the last number of year
 * I want to be able to save and edit personal information on my profile.
 * I want to be able to view my order history.
 * I want to be able to login and logout with ease.
-* I want to be able to leave reviews on products.
-* I want to be able to edit or delete my reviews.
-* I want to be able to leave comments on the blog posts.
-* I want to be able to edit or delete comments on blog posts.
 * I want to be able to delete my account.
 * I want to be able to change my password to keep my account secure.
 * I want to be able to reset my password if I forget it.
+* I want to receive a confirmation email when I submit an enquiry message on the contact page
 
 ### As a returning visitor:
 * I want to be able to find social media links.
@@ -98,10 +95,6 @@ Beeswax products have been increasing in popularity over the last number of year
 * I want to be able to add new products.
 * I want to be able to edit or delete existing products.
 * I want to be able to add new categories.
-* I want to be able to add new blog posts.
-* I want to be able to edit or delete existing blog posts.
-* I want to be able to delete blog comments left by users.
-* I want to be able to delete user reviews left on products.
 * I want to be able to access the Django admin portal easily
 * I want to be able to delete a user.
 * I want to be able to make another user admin.
@@ -210,11 +203,17 @@ Beeswax products have been increasing in popularity over the last number of year
 
 ---------------------------------------------------------------------------------------------------------------------------
 
+* I want to be able to subscribe to The HoneyHive newsletter
+    ![](readme/assets/testing-images/socials.png)
+
+---------------------------------------------------------------------------------------------------------------------------
+
+
 ## **Testing Unregistereds User Stories** 
 
 * I want to be able to search and filter products easily and efficiently.
     * A searchbar input field allows users to search by product, description or category. 
-    ![](readme/assets/testing-images/search.png)
+        ![](readme/assets/testing-images/search.png)
 
     * Product category badges allow users to filter which category they want to look at. 
 
@@ -332,8 +331,16 @@ Beeswax products have been increasing in popularity over the last number of year
 
 * I want to be able to login and logout with ease.
     * Users select the dropdown to login, which takes them to the login form. 
-    * Users can select the dropdown to logout, or if on the profile page their is a logout button.
+     ![](readme/assets/testing-images/login-dropdown.png)
 
+     ![](readme/assets/testing-images/login-forms.png)
+
+
+    * Users can select the dropdown to logout
+
+     ![](readme/assets/testing-images/logout-dropdown.png)
+
+    
 ---------------------------------------------------------------------------------------------------------------------------
 
 * I want to be able to change my password to keep my account secure.
@@ -344,6 +351,8 @@ Beeswax products have been increasing in popularity over the last number of year
 * I want to be able to reset my password if I forget it.
     * On the login page, users can click a link to reset their password if they have forgotten it.
 
+     ![](readme/assets/testing-images/login-forms.png)
+
 ---------------------------------------------------------------------------------------------------------------------------
 
 * I want to be able to delete my account.
@@ -351,57 +360,99 @@ Beeswax products have been increasing in popularity over the last number of year
 
 ---------------------------------------------------------------------------------------------------------------------------
 
+
+* I want to receive a confirmation email when I submit an enquiry message on the contact page
+    * An email is sent to the user who submits an enquiry through the contact page
+
+     ![](readme/assets/testing-images/contact-email.png)
+     s
+---------------------------------------------------------------------------------------------------------------------------
+
 ## **Testing Returning User Stories**
 
 * I want to be able to find social media links.
     * In the footer, across all pages, users can find links to the sites social media accounts
+ 
+    ![](readme/assets/testing-images/socials.png)
 
 ---------------------------------------------------------------------------------------------------------------------------
 
 * I want to be able to contact the site owner if I have any queries.
     * In the footer, across all pages, their is a link to the contact form
+    
+    ![](readme/assets/testing-images/socials.png)
+
 
 ---------------------------------------------------------------------------------------------------------------------------
 
 * I want to enjoy using the site without never ending scrolling.
     * In the footer, across all pages, their is a 'Back to top' link
 
+    ![](readme/assets/testing-images/socials.png)
+
 ---------------------------------------------------------------------------------------------------------------------------
 
 ## **Testing Superuser Userstories** 
 
 * I want to be able to add new products.
-    * From the navbar dropdown or in the profile page, superusers can add new products
+    * From the navbar dropdown or in product management page, superusers can add new products
+
+     ![](readme/assets/testing-images/add-product.png)
 
 ---------------------------------------------------------------------------------------------------------------------------
 
 * I want to be able to edit or delete existing products.
     * On the products page and each product detail page, edit and delete links allow superusers to edit or delete products. 
+    
+    ![](readme/assets/testing-images/edit-delete.png)
 
 ---------------------------------------------------------------------------------------------------------------------------
 
 * I want to be able to add new categories.
     * In the admin portal, accessed from the admin navlink, superusers can add new categories. 
 
+      ![](readme/assets/testing-images/categorys1.png)
+
+       ![](readme/assets/testing-images/categorys2.png)
+
 ---------------------------------------------------------------------------------------------------------------------------
 
 * I want to be able to access the Django admin portal easily
     * In the superuser user option dropdown there is a link to the admin portal
+
+ 
 
 ---------------------------------------------------------------------------------------------------------------------------
 
 * I want to be able to delete a user.
     * In the admin portal, superusers can delete any user.
 
+    ![](readme/assets/testing-images/delete_user.png)
+
 ---------------------------------------------------------------------------------------------------------------------------
 
 * I want to be able to make another user admin.
     * In the admin portal, superusers can make other users admin
 
+      ![](readme/assets/testing-images/superuser.png)
+
 ---------------------------------------------------------------------------------------------------------------------------
 
 * I want to be notified when a user fills out the contact form, so I don't have to check the admin portal constantly.
 
+ * When a user completes the contact form, an email is sent to the DEFAULT_FROM_EMAIl to notify the admin that someone has contacted the site
+
+  ![](readme/assets/testing-images/email1.png)
+
+ * Email sent to admin, notifying of user contact
+
+    ![](readme/assets/testing-images/email1.png)
+
+* The user gets a success message to let them know thier message has been sent and the will get an emails
+
+     ![](readme/assets/testing-images/success-contact.png)
+
+---------------------------------------------------------------------------------------------------------------------------
 
 ## **Testing User stories Over view**
 
