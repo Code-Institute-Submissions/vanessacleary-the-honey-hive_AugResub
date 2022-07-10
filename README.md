@@ -39,6 +39,7 @@ Beeswax products have been increasing in popularity over the last number of year
 * See order information
 * Sign up for a newsletter to be kept up to date 
 
+## Strategy Plane
 
 ## Site Owner Goals
 
@@ -100,11 +101,87 @@ Beeswax products have been increasing in popularity over the last number of year
 * I want to be able to make another user admin.
 * I want to be notified when a user fills out the contact form, so I don't have to check the admin portal constantly.
 
-## Wireframes
+
+## Scope Plane
+
+#### Existing Features
+
+During the initial strategy planning, the opportunities of the site were determined and values were given according to their importance and viability ranking between 1 and 5. Below are the list of features that were valued important and viable at this stage. The remaining features have been recorded in ‘Features Left to Implement’.
+
+**Design**
+
+* Responsive design
+* Easy navigation throughout, nav links clearly labeled or icons used in navbar. Sidenav is used for smaller devices.
+* Site logo - returns user to the home page
+* Nav link options will change depending on status of user eg. unregistered, registered or admin
+* On the home page a selection of photos will be displayed that link to different sections of the site, aimed to promote certain products or lines that are in season
+* On larger screens a hover effect over some images will display an image and call to action button. On smaller screens this will be displayed at all times.
+
+**Products**
+
+* Users are able to search and filter products depending on what they are looking for
+* Users can add products to shopping basket
+* Users can update or delete products from shopping basket
+* Users can securely purchase product(s) from the site
+* Order confirmation will be displayed to the user and subsequent confirmation email sent.
+* Registered users can leave reviews on products
+* Registered users can edit or delete their reviews
+* Register, Login and Logout
+* Users are able to register for an account
+* Registered users can login and logout of account
+* Users will receive confirmation emails for registering, order summary and contact enquiries.
+* Registered users can change their password if forgotten
+* Registered users can view profile containing personal information and order history
+* Registered users can save and update personal information on their profile
+
+**Admin**
+
+* Admin users can add, update and delete products
+* Admin users can create new categories
+* Admin users can add, update and delete blog posts
+* Admin users can delete user comments on blog posts
+* Admin users can delete user reviews on products
+* Admin users can delete users
+* Admin users can make other users admin
+* Admin users are notified by email when a user fills out the contact form
+
+**Other**
+
+* Users can contact site owner through contact form
+* If user is logged in, contact form will pre-populate
+* Social media links displayed
+* Back to top button in footer, to prevent unnecessary scrolling
+* All users can view blog posts, if logged in users can leave comments
+* Deletion confirmation before anything is deleted, to prevent accidental deletion
+* Cancel buttons on all edit pages, incase user changes their mind
+
+**Future Features to implement**
+
+* A save feature so customers can save products to their wish list
+* Expand product range and categories 
+* A testimonial page for customers to see reviews 
+* Out of stock notifications when products are out of stock with the option to receive an email notification when the item is back in stock
+* The funcionality for Superusers to send mail message to users to subsribe to the the news letter from the admin panel
+    * This was originally in the plan for this version of the website, but due to time contstraints it had to be taken out. See code below:
+        * here 
+
+## Structure plan
+
+Data schema form 
+
+### Wireframes
 
 * Desktop 
 * Mobile
 * Tablet
+
+Changes to wireframes 
+
+Surface Plane 
+
+Color 
+
+Images
 
 ## **Technologies used**
 
@@ -305,6 +382,8 @@ Beeswax products have been increasing in popularity over the last number of year
 * I want to be able to receive a confirmation email upon registration.
     * Users receive a confirmation email to verify their email address
 
+
+
 ---------------------------------------------------------------------------------------------------------------------------
 
 * I want to be able to view my personalized profile.
@@ -465,4 +544,13 @@ Beeswax products have been increasing in popularity over the last number of year
 | As a returning visitor: | After troughly testing these stories it is clear a first time user of the site will be able to use the site as intended. The user stories set out initally have been statisfied |
 | As a superuser: | After troughly testing these stories it is clear a first time user of the site will be able to use the site as intended. The user stories set out initally have been statisfied |
 
+
+## Challenges
+
+## Deployment 
+
+## Credits
+
+
+## Awknowledgements
 
