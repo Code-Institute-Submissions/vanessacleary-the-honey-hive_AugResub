@@ -386,7 +386,6 @@ By website creator. The 'About' section was written by the website creator to re
     * Following a successful order an order confirmation email is sent.
 
 
-
 ---------------------------------------------------------------------------------------------------------------------------
 
 ## **Testing Registered User Stories** 
