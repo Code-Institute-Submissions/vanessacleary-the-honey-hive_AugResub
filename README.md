@@ -177,11 +177,27 @@ Data schema form
 
 Changes to wireframes 
 
-Surface Plane 
+## Surface Plane 
 
-Color 
+### Color Scheme
+ * The color scheme was the way to choose given the nature of the products, yellow and black were going to play a big part in the website design. A softer black and brighter yellow was chosen. The softer black was easier on they eyes then #000 (standard black). A white background and base for each page was chosen for its crisp and clean look. Coolors was used to try generate a 3rd color but none were standing out as a winner
 
-Images
+
+### Images
+* The hero image was taken from google. It was decided that the big jar of honey would best represent all the products that would be on the site as they all stemmed from bees and honey
+All product images were taken from existing beeswax e-commerce websites. 
+
+### Typography
+To ensure easy reading, consistency and a good user experience, I have chosen 'Meriweather’  for the font of the entire site. This font is playful, easy to read and goes well with the theme.
+
+### Content
+By website creator. The 'About' section was written by the website creator to reflect the porpose of the website.
+
+### Readme.MD
+* Past projects from my slack team mates
+* Boutique Ado | check out | bag | profile | order
+* W3 Schools for landing page 
+
 
 ## **Technologies used**
 
@@ -548,6 +564,90 @@ Images
 ## Challenges
 
 ## Deployment 
+
+### Creation
+
+* Following logging into my GitHub account, I created the repository from Code Institute's Gitpod Template. Select 'Use this template', fill in the repository name and create a repository.
+     ![](readme/assets/deployment-imgs/repo.png)
+
+### Forking
+* Sign into your GitHub account and go to this repository.
+* In the top right there are several options, including 'fork'. Select this to fork the repository.
+    ![](readme/assets/deployment-imgs/forks.png)
+
+### Cloning
+* Sign into your GitHub account and go to this [repository](https://github.com/vanessacleary/the-honey-hive). In addition to the cloning steps you will need to follow steps for setting up AWS, Stripe and Heroku.
+* Clone using command line
+* Select button 'Code' next to Gitpod button and copy the URL
+     ![](readme/assets/deployment-imgs/clone.png)
+* In your workspace terminal type 'git clone' followed by the URL and press enter
+* Clone using Desktop GitHub
+* If you select this, it will guide you through the necessary steps
+* For more information on troubleshooting see the GitHub documentation [here](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository#about-cloning-a-repository).
+
+### Setting up the Project
+
+* The project has a set of requirements needed for the project to run. You can install these with pip3 install. The requirements are below.
+* If you have cloned the project then you can use pip3 install -r requirements and it will install all requirements needed
+* Create a SECRET_KEY. I used a [Django Secret Key Generator](https://miniwebtool.com/django-secret-key-generator/).
+* The settings.py file is set up to collect keys from the environment. During development these were stored in my Gitpod dashboard. Name the variables accordingly. DEVELOPMENT is set to True.
+ *   ![](readme/assets/deployment-imgs/variables.png)
+* Requirements.txt and Procfile are necessary for Heroku deployment. Make sure these have been committed and pushed before deployment. Use command pip3 freeze > requirements.txt to ensure the file is up to date.
+* During development migrations need to be run using commands:
+    * python3 manage.py makemigrations --dry-run
+    * python3 manage.py makemigrations
+    * python3 manage.py migrate --plan
+    * python3 manage.py migrate
+* To create a superuser use the command python3 manage.py createsuperuser and follow the steps
+
+Setting up AWS
+First you need to register for an account if you don't already have one. I am using the Free Tier.
+Once created, search S3, select and create bucket
+Fill in the bucket name, select nearest region and unselect 'block all public access' checkbox. Then select to create bucket
+Once created
+Go to Properties section and go to Static Web Hosting, select Edit and Enable and enter default values for index and error documents and click Save.
+On permissions tab, paste this configuration into CORS section
+Go to Bucket Policy section and select 'policy generator'
+In the policy generator select 'S3 Bucket Policy' for type, enter a (*) into 'Principal' input and select 'Get Object' from Actions Dropdown.
+Copy Amazon Resource Number (ARN) from the previous tab and paste into ARN box. Select 'Add Statement' and then 'Generate Policy'.
+Copy policy and paste in Bucket Policy Editor and add a (/*) onto the end of the resource key and click save.
+Go to the Access Control List and click Edit. Check Everyone(Public Access) and confirm you understand the changes.
+Search for IAM in AWS Services and click 'User Groups' and select to create a new group
+Give the group a name and click 'Next Step' until 'Create Group', select this.
+On the menu select 'Policies' and then 'Create Policy' then select 'Import Policy' and search 'S3' and import 'AmazonS3FullAccess' policy.
+Amend policy by adding your ARN as the value for resource as list in the format as follows:
+"Arn:aws:",
+"arn:aws:<ARN/*>",
+Click 'Next: Tags' and 'Next: Review'
+Provide policy name and click 'Create Policy'
+Go to the IAM menu and select 'Users' and add users. Fill in the name and select 'Access key- Programmatic Access'.
+Add a user to the group, by selecting the user. Select 'Next' and 'Create User'.
+Download CSV file, as this has the keys required. Once you leave this page you won't be able to download or access the keys again.
+The AWS keys need to be added to your Heroku Config Vars. In projects settings.py replace AWS_STORAGE_BUCKET_NAME with your bucket name.
+Back in your AWS bucket. Select bucket and click 'Create Folder', name it 'media' and create. You can now add media files to it.
+
+Setting up Stripe
+First you need to register for an account with Stripe, if you don't have one already.
+In the dashboard, go to the section for Developers and select 'API keys'. Here you will get your publishable and secret keys. These are not to go in version control. These can be stored in the GitHub environment during development and Heroku Config Vars if deploying.
+Next go to 'Webhooks' in the side menu. Select 'Add endpoint'
+Add the url in for the site followed by /checkout/wh/
+If deploying, you will need to create a new endpoint with the deployed URL
+Next select the events you want for the webhooks, once selected then 'Add Endpoint'.
+In your new webhook there is a signing secret. Copy this and add to variable STRIPE_WH_SECRET in the GitHub environment. When creating an endpoint for Heroku, this will create a new signing secret.
+
+Heroku Deployment
+Firstly login into your Heroku account.
+Select 'New' and then 'Create New App', give it a name and select the closest region and click 'Create App'.
+In Resources under Add-ons select 'Heroku Postgres'
+Once the app is created, go to settings and reveal Config Vars and add the following:
+Note: the DATABASE_URL was already populated, USE_AWS is set to True and the AWS_SECRET_KEY was generated using the Django Secret Key Generator.
+Go to 'Deploy' and select 'Heroku Git'. Currently Heroku has stopped automatic deploys with GitHub
+Once deployed commits need to be manually pushed to both GitHub and Heroku. Using the command git push heroku main will push to Heroku
+You will need to migrate and create a superuser. Migrations can be done with the previous steps with 'heroku run' in front. E.g heroku run python3 manage.py makemigrations.
+
+
+
+
 
 ## Credits
 
