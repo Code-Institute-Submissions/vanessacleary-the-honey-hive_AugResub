@@ -600,57 +600,69 @@ By website creator. The 'About' section was written by the website creator to re
     * python3 manage.py migrate
 * To create a superuser use the command python3 manage.py createsuperuser and follow the steps
 
-Setting up AWS
-First you need to register for an account if you don't already have one. I am using the Free Tier.
-Once created, search S3, select and create bucket
-Fill in the bucket name, select nearest region and unselect 'block all public access' checkbox. Then select to create bucket
-Once created
-Go to Properties section and go to Static Web Hosting, select Edit and Enable and enter default values for index and error documents and click Save.
-On permissions tab, paste this configuration into CORS section
-Go to Bucket Policy section and select 'policy generator'
-In the policy generator select 'S3 Bucket Policy' for type, enter a (*) into 'Principal' input and select 'Get Object' from Actions Dropdown.
-Copy Amazon Resource Number (ARN) from the previous tab and paste into ARN box. Select 'Add Statement' and then 'Generate Policy'.
-Copy policy and paste in Bucket Policy Editor and add a (/*) onto the end of the resource key and click save.
-Go to the Access Control List and click Edit. Check Everyone(Public Access) and confirm you understand the changes.
-Search for IAM in AWS Services and click 'User Groups' and select to create a new group
-Give the group a name and click 'Next Step' until 'Create Group', select this.
-On the menu select 'Policies' and then 'Create Policy' then select 'Import Policy' and search 'S3' and import 'AmazonS3FullAccess' policy.
-Amend policy by adding your ARN as the value for resource as list in the format as follows:
-"Arn:aws:",
-"arn:aws:<ARN/*>",
-Click 'Next: Tags' and 'Next: Review'
-Provide policy name and click 'Create Policy'
-Go to the IAM menu and select 'Users' and add users. Fill in the name and select 'Access key- Programmatic Access'.
-Add a user to the group, by selecting the user. Select 'Next' and 'Create User'.
-Download CSV file, as this has the keys required. Once you leave this page you won't be able to download or access the keys again.
-The AWS keys need to be added to your Heroku Config Vars. In projects settings.py replace AWS_STORAGE_BUCKET_NAME with your bucket name.
-Back in your AWS bucket. Select bucket and click 'Create Folder', name it 'media' and create. You can now add media files to it.
+### Setting up AWS
+* First you need to register for an account if you don't already have one. I am using the Free Tier.
+* Once created, search S3, select and create bucket
+* Fill in the bucket name, select nearest region and unselect 'block all public access' checkbox. Then select to create bucket
+* Once created
+    * Go to Properties section and go to Static Web Hosting, select Edit and Enable and enter default values for index and error documents and click Save.
+    * On permissions tab, paste this configuration into CORS section
+    * Go to Bucket Policy section and select 'policy generator'
+    * In the policy generator select 'S3 Bucket Policy' for type, enter a (*) into 'Principal' input and select 'Get Object' from Actions Dropdown.
+    * Copy Amazon Resource Number (ARN) from the previous tab and paste into ARN box. Select 'Add Statement' and then 'Generate Policy'.
+    * Copy policy and paste in Bucket Policy Editor and add a (/*) onto the end of the resource key and click save.
+    * Go to the Access Control List and click Edit. Check Everyone(Public Access) and confirm you understand the changes.
+    * Search for IAM in AWS Services and click 'User Groups' and select to create a new group
+    * Give the group a name and click 'Next Step' until 'Create Group', select this.
+    * On the menu select 'Policies' and then 'Create Policy' then select 'Import Policy' and search 'S3' and import 'AmazonS3FullAccess' policy.
+    * Amend policy by adding your ARN as the value for resource as list in the format as follows:
+        * "Arn:aws:",
+        * "arn:aws:<ARN/*>",
+    * Click 'Next: Tags' and 'Next: Review'
+    * Provide policy name and click 'Create Policy'
+    * Go to the IAM menu and select 'Users' and add users. Fill in the name and select 'Access key- Programmatic Access'.
+    * Add a user to the group, by selecting the user. Select 'Next' and 'Create User'.
+    * Download CSV file, as this has the keys required. Once you leave this page you won't be able to download or access the keys again.
+    * The AWS keys need to be added to your Heroku Config Vars. In projects settings.py replace AWS_STORAGE_BUCKET_NAME with your bucket name.
+    * Back in your AWS bucket. Select bucket and click 'Create Folder', name it 'media' and create. You can now add media files to it.
 
-Setting up Stripe
-First you need to register for an account with Stripe, if you don't have one already.
-In the dashboard, go to the section for Developers and select 'API keys'. Here you will get your publishable and secret keys. These are not to go in version control. These can be stored in the GitHub environment during development and Heroku Config Vars if deploying.
-Next go to 'Webhooks' in the side menu. Select 'Add endpoint'
-Add the url in for the site followed by /checkout/wh/
-If deploying, you will need to create a new endpoint with the deployed URL
-Next select the events you want for the webhooks, once selected then 'Add Endpoint'.
-In your new webhook there is a signing secret. Copy this and add to variable STRIPE_WH_SECRET in the GitHub environment. When creating an endpoint for Heroku, this will create a new signing secret.
+### Setting up Stripe
+* First you need to register for an account with Stripe, if you don't have one already.
+* In the dashboard, go to the section for Developers and select 'API keys'. Here you will get your publishable and secret keys. These are not to go in version control. These can be stored in the GitHub environment during development and Heroku Config Vars if deploying.
+* Next go to 'Webhooks' in the side menu. Select 'Add endpoint'
+* Add the url in for the site followed by /checkout/wh/
+* If deploying, you will need to create a new endpoint with the deployed URL
+* Next select the events you want for the webhooks, once selected then 'Add Endpoint'.
+* In your new webhook there is a signing secret. Copy this and add to variable STRIPE_WH_SECRET in the GitHub environment. When creating an endpoint for Heroku, this will create a new signing secret.
 
-Heroku Deployment
-Firstly login into your Heroku account.
-Select 'New' and then 'Create New App', give it a name and select the closest region and click 'Create App'.
-In Resources under Add-ons select 'Heroku Postgres'
-Once the app is created, go to settings and reveal Config Vars and add the following:
-Note: the DATABASE_URL was already populated, USE_AWS is set to True and the AWS_SECRET_KEY was generated using the Django Secret Key Generator.
-Go to 'Deploy' and select 'Heroku Git'. Currently Heroku has stopped automatic deploys with GitHub
-Once deployed commits need to be manually pushed to both GitHub and Heroku. Using the command git push heroku main will push to Heroku
-You will need to migrate and create a superuser. Migrations can be done with the previous steps with 'heroku run' in front. E.g heroku run python3 manage.py makemigrations.
-
-
-
+### Heroku Deployment
+* Firstly login into your Heroku account.
+* Select 'New' and then 'Create New App', give it a name and select the closest region and click 'Create App'.
+* In Resources under Add-ons select 'Heroku Postgres'
+* Once the app is created, go to settings and reveal Config Vars and add the following:
+* Note: the DATABASE_URL was already populated, USE_AWS is set to True and the AWS_SECRET_KEY was generated using the Django Secret Key Generator.
+* Go to 'Deploy' and select 'Heroku Git'. Currently Heroku has stopped automatic deploys with GitHub
+* Once deployed commits need to be manually pushed to both GitHub and Heroku. Using the command git push heroku main will push to Heroku
+* You will need to migrate and create a superuser. Migrations can be done with the previous steps with 'heroku run' in front. E.g heroku run python3 manage.py makemigrations.
 
 
 ## Credits
 
+### Product Content
+
+* Product content for the The HoneyHive came from [Tris Honey](https://trishshoneyproducts.com/) and [Brookfield Farm](https://www.brookfield.farm/collections/irish-beeswax-candles) [Hannah's Bees](https://hannasbees.ie/)
+
+### Code content
+
+* README.md was used from this code institute example ready me 
+* Code Institute's [Boutique Ado walkthrough project](8
+https://github.com/Code-Institute-Solutions/boutique_ado_v1) was used throughout as a guide.
+* The landing page was edited from the (WC schools)[https://www.w3schools.com/w3css/w3css_templates.asp]
+* The footer was edit from [Surf the wave](https://github.com/anyahush/surf-the-wave)
 
 ## Awknowledgements
+
+* Code Institute tutors and Slack community for help and guidance
+* My mentor Reuben Ferrante for his help and guidance throughout
+* My mini-Feb group on Slack for moral support and feedback with special thanks to Ashly Buy, Nick Lennon, Maggie Walsh and Anya McDonald
 
