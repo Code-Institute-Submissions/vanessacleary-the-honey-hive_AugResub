@@ -646,8 +646,14 @@ By website creator. The 'About' section was written by the website creator to re
 * Firstly login into your Heroku account.
 * Select 'New' and then 'Create New App', give it a name and select the closest region and click 'Create App'.
 * In Resources under Add-ons select 'Heroku Postgres'
+
+   ![](readme/assets/deployment-imgs/heroku-pages.png)
+
 * Once the app is created, go to settings and reveal Config Vars and add the following:
 * Note: the DATABASE_URL was already populated, USE_AWS is set to True and the AWS_SECRET_KEY was generated using the Django Secret Key Generator.
+
+  ![](readme/assets/deployment-imgs/config-var.png)
+
 * Go to 'Deploy' and select 'Heroku Git'. Currently Heroku has stopped automatic deploys with GitHub
 * Once deployed commits need to be manually pushed to both GitHub and Heroku. Using the command git push heroku main will push to Heroku
 * You will need to migrate and create a superuser. Migrations can be done with the previous steps with 'heroku run' in front. E.g heroku run python3 manage.py makemigrations.
