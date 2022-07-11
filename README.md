@@ -186,7 +186,7 @@ Changes to wireframes
 
     ![](readme/assets/other-imgs/Yellow.png)
 
-     ![](readme/assets/other-imgs/soft-black.png)
+    ![](readme/assets/other-imgs/soft-black.png)
 
 ### Images
 * The hero image was taken from google. It was decided that the big jar of honey would best represent all the products that would be on the site as they all stemmed from bees and honey.
@@ -202,7 +202,6 @@ By website creator. The 'About' section was written by the website creator to re
 * Past projects from my slack team mates
 * Boutique Ado | check out | bag | profile | order
 * W3 Schools for landing page 
-
 
 ## **Technologies used**
 
@@ -238,7 +237,6 @@ By website creator. The 'About' section was written by the website creator to re
 - [Google Chrome Development Tools](https://developer.chrome.com/docs/devtools/) - Design/Development Tools
 - [Balsamiq](https://balsamiq.com/) - Wireframe designer software
 - [Coolors](https://coolors.co/) - Colour scheme generator
-- [Lucid App](https://lucid.app/) - Diagram creator
 - [Draw.io](https://app.diagrams.net/) - Flow chart creator
 </details>
 
@@ -275,6 +273,7 @@ By website creator. The 'About' section was written by the website creator to re
 
         * Mobile Nav
         ![](readme/assets/testing-images/nav-mobile.png)
+
 ---------------------------------------------------------------------------------------------------------------------------
  * I want to understand the purpose of the site easily.
     * On the homepage there is an 'About' section which tells the story about what The HoneyHive is about 
@@ -319,6 +318,7 @@ By website creator. The 'About' section was written by the website creator to re
 
     * Navbar dropdown menus have categories listed so users can easily filter which products users want to look at. 
     ![](readme/assets/testing-images/dropdown.png)
+
 ---------------------------------------------------------------------------------------------------------------------------
 
 * I want to be able to sort and view products according to type, price and name.
@@ -402,8 +402,6 @@ By website creator. The 'About' section was written by the website creator to re
 * I want to be able to receive a confirmation email upon registration.
     * Users receive a confirmation email to verify their email address
 
-
-
 ---------------------------------------------------------------------------------------------------------------------------
 
 * I want to be able to view my personalized profile.
@@ -424,7 +422,6 @@ By website creator. The 'About' section was written by the website creator to re
 * I want to be able to view my order history.
     * On the users profile page, users can view their order history
               ![](readme/assets/testing-images/order-history.png)
-
 
 ---------------------------------------------------------------------------------------------------------------------------
 
@@ -519,7 +516,6 @@ By website creator. The 'About' section was written by the website creator to re
 * I want to be able to access the Django admin portal easily
     * In the superuser user option dropdown there is a link to the admin portal
 
- 
 
 ---------------------------------------------------------------------------------------------------------------------------
 
@@ -566,9 +562,14 @@ By website creator. The 'About' section was written by the website creator to re
 
 
 ## Challenges
-* C1
-* C2 
-* c3 
+* There were a few issues when it came to deployed the site. 
+    * A spelling error in the Procfile had resulted in a failed deployement
+    * Then a 'Bad request' rendered when deployed, this was resolved by updating the main Urls.py and settings file with the following code
+        * urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
+        * urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+* Confirmation emails were not triggering when an order was compeleted. This was because the the webhook endpoint was missing a '/' at the end. 
+* The product images were not showing on the deployed site, and after completing the loaddata commands, the products still were not showing. There were some ',' missing from the json file that caused this. 
+* Time was a challenge as not everyhting that had intededed to be included could be included to to submission deadline
 
 ## Deployment 
 
@@ -614,7 +615,13 @@ By website creator. The 'About' section was written by the website creator to re
 * Once created
     * Go to Properties section and go to Static Web Hosting, select Edit and Enable and enter default values for index and error documents and click Save.
     * On permissions tab, paste this configuration into CORS section
+
+        ![](readme/assets/deployment-imgs/CORS.png)
+     
     * Go to Bucket Policy section and select 'policy generator'
+
+        ![](readme/assets/deployment-imgs/bucket-policy.png)
+
     * In the policy generator select 'S3 Bucket Policy' for type, enter a (*) into 'Principal' input and select 'Get Object' from Actions Dropdown.
     * Copy Amazon Resource Number (ARN) from the previous tab and paste into ARN box. Select 'Add Statement' and then 'Generate Policy'.
     * Copy policy and paste in Bucket Policy Editor and add a (/*) onto the end of the resource key and click save.
