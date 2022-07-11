@@ -1,8 +1,6 @@
 from django.shortcuts import render, redirect, reverse
-from . forms import SubscibersForm, MailMessageForm
 from . models import Subscribers
 from django.contrib import messages
-from django.core.mail import send_mail
 
 def handle_subscription(request):
     if request.method == "POST":
