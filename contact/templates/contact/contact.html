@@ -20,15 +20,16 @@
         </div>
     </div>
     <div class="row mt-3 custom-margin">
-        
+
         <!-- Contact form -->
         <div class="col-12 col-md-6 offset-md-3">
             <form action="{% url 'contact' %}" method="POST" class="form">
                 {% csrf_token %}
                 {{ contact_form|crispy }}
                 <div class="text-center">
-                    <button class="btn btn-contact btn-black rounded-pill" type="submit" >Send</button>
-                    <a href="{% url 'home' %}" class="btn btn-black rounded-pill aria-label="Link to go back to home page">
+                    <button class="btn btn-contact btn-black rounded-pill" type="submit">Send</button>
+                    <a href="{% url 'home' %}" class="btn btn-black rounded-pill aria-label=" Link to go back to home
+                        page">
                         Cancel
                     </a>
                 </div>

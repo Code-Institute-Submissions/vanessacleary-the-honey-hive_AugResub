@@ -24,7 +24,7 @@
                 {% endif %}
             </div>
         </div>
- <!-- Display product price -->
+        <!-- Display product price -->
         <div class="col-12 col-md-6 col-lg-4">
             <div class="product-details-container mb-5 mt-md-5">
                 <p class="mb-0">{{ product.name }}</p>
@@ -36,7 +36,7 @@
                     </a>
                 </p>
                 {% endif %}
- <!-- Display producat rating -->
+                <!-- Display producat rating -->
                 {% if product.rating %}
                 <small class="text-muted"><i class="fas fa-star mr-1"></i>{{ product.rating }} / 5</small>
                 {% else %}
@@ -48,7 +48,7 @@
                 {% endif %}
                 <small class="text-muted">No Rating</small>
                 {% endif %}
-<!-- Display product discription and quanity selector -->
+                <!-- Display product discription and quanity selector -->
                 <p class="mt-3">{{ product.description }}</p>
                 <form class="form" action="{% url 'add_to_bag' product.id %}" method="POST">
                     {% csrf_token %}
@@ -78,7 +78,7 @@
                                 </div>
                             </div>
                         </div>
-   <!-- Add to bag or keep shopping btns -->
+                        <!-- Add to bag or keep shopping btns -->
                         <div class="col-12">
                             <a href="{% url 'products' %}" class="btn btn-outline-black rounded-pill mt-5">
                                 <span class="icon">

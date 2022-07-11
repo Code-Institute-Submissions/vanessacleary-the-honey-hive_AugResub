@@ -266,7 +266,7 @@ By website creator. The 'About' section was written by the website creator to re
 
 ## **Testing User Stories**
 
-* Test can be found here 
+* Test can be found [here](TESTING.md) 
 
 ## Challenges
 * There were a few issues when it came to deployed the site. 
