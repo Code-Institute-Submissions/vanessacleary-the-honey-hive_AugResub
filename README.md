@@ -1,4 +1,4 @@
-Link to live project.
+[Link to live project](https://the-honey-hive.herokuapp.com/).
 
 
 This is the final portfolio project that will finalize the Full Stack Software Development Program at the Code Institute.
@@ -163,7 +163,9 @@ During the initial strategy planning, the opportunities of the site were determi
 * Out of stock notifications when products are out of stock with the option to receive an email notification when the item is back in stock
 * The funcionality for Superusers to send mail message to users to subsribe to the the news letter from the admin panel
     * This was originally in the plan for this version of the website, but due to time contstraints it had to be taken out. See code below:
-        * here 
+        ![](readme/assets/other-imgs/mail-model.png)
+        ![](readme/assets/other-imgs/mail-views.png)
+        ![](readme/assets/other-imgs/mail-panda.png)
 
 ## Structure plan
 
@@ -182,13 +184,13 @@ Changes to wireframes
 ### Color Scheme
  * The color scheme was the way to choose given the nature of the products, yellow and black were going to play a big part in the website design. A softer black and brighter yellow was chosen. The softer black was easier on they eyes then #000 (standard black). A white background and base for each page was chosen for its crisp and clean look. Coolors was used to try generate a 3rd color but none were standing out as a winner
 
-    ![](readme/assets/imgs/Yellow.png)
+    ![](readme/assets/other-imgs/Yellow.png)
 
-     ![](readme/assets/imgs/soft-black.png)
+     ![](readme/assets/other-imgs/soft-black.png)
 
 ### Images
-* The hero image was taken from google. It was decided that the big jar of honey would best represent all the products that would be on the site as they all stemmed from bees and honey
-All product images were taken from existing beeswax e-commerce websites. 
+* The hero image was taken from google. It was decided that the big jar of honey would best represent all the products that would be on the site as they all stemmed from bees and honey.
+* All product images were taken from existing beeswax e-commerce websites. See credit section for more information. 
 
 ### Typography
 To ensure easy reading, consistency and a good user experience, I have chosen 'Meriweather’  for the font of the entire site. This font is playful, easy to read and goes well with the theme.
