@@ -182,6 +182,9 @@ Changes to wireframes
 ### Color Scheme
  * The color scheme was the way to choose given the nature of the products, yellow and black were going to play a big part in the website design. A softer black and brighter yellow was chosen. The softer black was easier on they eyes then #000 (standard black). A white background and base for each page was chosen for its crisp and clean look. Coolors was used to try generate a 3rd color but none were standing out as a winner
 
+    ![](readme/assets/imgs/Yellow.png)
+
+     ![](readme/assets/imgs/soft-black.png)
 
 ### Images
 * The hero image was taken from google. It was decided that the big jar of honey would best represent all the products that would be on the site as they all stemmed from bees and honey
@@ -562,6 +565,9 @@ By website creator. The 'About' section was written by the website creator to re
 
 
 ## Challenges
+* C1
+* C2 
+* c3 
 
 ## Deployment 
 
