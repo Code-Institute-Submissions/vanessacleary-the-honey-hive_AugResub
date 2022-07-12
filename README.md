@@ -5,7 +5,7 @@ This is the final portfolio project that will finalize the Full Stack Software D
 
 The requirements were to build a full-stack framework based around business logic used to control a centrally-owned dataset" using the technologies: HTML, CSS, JavaScript, Python+Django with a relational database and using the Stripe payments system.
 
-Based on the above requirements, this ecommerce website was created to showcase a variety of Beeswax products that exist on the market in one place. The Honey Hive works with independent and small creators and businesses to build the products & brands for the website.
+Based on the above requirements, this ecommerce website was created to showcase a variety of Beeswax products that exist on the market in one place. The HoneyHive works with independent and small creators and businesses to build the products & brands for the website.
 
 Beeswax products have been increasing in popularity over the last number of years but there is a gap in the market for a website that sells a host of brands of all the different products and brands. 
 

@@ -1,6 +1,6 @@
 Hello {{ contact.full_name }},
 
-Thank you for contacting The Honey Hive.
+Thank you for contacting The HoneyHive.
 
 This email is a confirmation of your enquiry.
 
