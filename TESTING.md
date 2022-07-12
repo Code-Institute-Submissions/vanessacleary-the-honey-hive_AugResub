@@ -352,21 +352,11 @@
 
 * Desktop
 
-![](readme/assets/testing-images/.png)
+![](readme/assets/testing-images/add-product-mobile.png)
 
 * Mobile
 
-![](readme/assets/testing-images/.png)
-
-### Edit Product Page
-
-* Desktop
-
-![](readme/assets/testing-images/.png)
-
-* Mobile
-
-![](readme/assets/testing-images/.png)
+![](readme/assets/testing-images/add-product-desktop.png)
 
 
 ### Shopping bag Page
@@ -416,9 +406,23 @@
 
 * Desktop
 
-![](readme/assets/testing-images/.png)
+![](readme/assets/testing-images/subscribe-desktop.png)
 
 * Mobile
 
-![](readme/assets/testing-images/.png)
+![](readme/assets/testing-images/subscribe-mobile.png)
 
+
+## Further Manual Testing
+
+![](readme/assets/testing-images/manual-testing1.png)
+
+![](readme/assets/testing-images/manual-testing2.png)
+
+![](readme/assets/testing-images/manual-testing3.png)
+
+![](readme/assets/testing-images/manual-testing4.png)
+
+![](readme/assets/testing-images/manual-testing5.png)
+
+![](readme/assets/testing-images/manual-testing6.png)
