@@ -17,6 +17,7 @@ body {
    padding: 100px 0;
 }
  
+
 /* Nav bar */
 /*   
  .navbar-light .navbar-nav .nav-link:hover {
@@ -40,15 +41,8 @@ body {
 .hvr-grow:active {
    transform: scale(1.1);
 } */
-  
-.delivery-banner {
-   background-color: #0e1111; !important;
-   padding-top: 5px;
-} 
- 
-/* #delivery-banner h3 {
-  font-size: .9rem;
-}  */
+   
+
 /* from Bulma */
 .icon {
    align-items: center;
@@ -219,11 +213,6 @@ input[name='q']::placeholder {
  
 /* Contact */
  
-btn-contact {
-   color: #F5B503;
-    !important;
-
-}
  
 /* Footer */
 footer {

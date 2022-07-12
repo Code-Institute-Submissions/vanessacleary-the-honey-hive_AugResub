@@ -412,6 +412,15 @@
 
 ![](readme/assets/testing-images/subscribe-mobile.png)
 
+### Validation
+
+* Using the (W3C)[https://validator.w3.org/] the following errors were found:
+    * There were others errors that were fixed and these were remaining. 
+    * It was assumed these were fixed but the errors are still showing 
+    * These will now be fixed at a later stage
+
+![](readme/assets/testing-images/html-validation.png)
+
 
 ## Further Manual Testing
 
