@@ -412,8 +412,9 @@
 
 ![](readme/assets/testing-images/subscribe-mobile.png)
 
-### Validation
+## Validation
 
+### HTML Validation
 * Using the (W3C)[https://validator.w3.org/] HTML validator the following errors were found:
     * There were others errors that were fixed and these were remaining. 
     * It was assumed these were fixed but the errors are still showing 
@@ -421,9 +422,23 @@
 
 ![](readme/assets/testing-images/html-validation.png)
 
-* Using th (W3C)[https://jigsaw.w3.org/css-validator/]CSS validator there were no errors found with the CSS
+### CSS Validation
+
+* Using the (W3C)[https://jigsaw.w3.org/css-validator/] CSS validator there were no errors found with the CSS
 
 ![](readme/assets/testing-images/css-validation.png)
+
+### Python Validation
+
+* Python validation was carried out on all Python files using PEP8 Validator. Initial errors returned were:
+    * Lines too long
+    * Indentation errors
+    * Missing blank space at end of file
+    * Missing docstrings
+
+* Once these were resolved all Python files returned a successful validation result.
+
+![](readme/assets/testing-images/python-validation.png)
 
 
 ## Further Manual Testing

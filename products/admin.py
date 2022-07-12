@@ -3,6 +3,7 @@ from .models import Product, Category
 
 # Register your models here.
 
+
 class ProductAdmin(admin.ModelAdmin):
     list_display = (
         'name',
@@ -13,6 +14,7 @@ class ProductAdmin(admin.ModelAdmin):
     )
 
     ordering = ('name',)
+
 
 class CategoryAdmin(admin.ModelAdmin):
     list_display = (
