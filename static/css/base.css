@@ -242,9 +242,6 @@ footer a {
    margin: 0 3px;
 }
  
-footer h4 {
-   text-transform: uppercase;
-}
  
 footer a:hover {
    color: #ffc107 !important;
@@ -384,33 +381,17 @@ footer a:hover {
    }
 }
   
-  .display-4.logo-font.text-black {
+  /* .display-4.logo-font.text-black {
     font-size: 2rem;
- }
-  
- .nav-link {
-    padding: 0.15rem;
- }
-  
- .nav-link i.fa-lg {
-    font-size: 1rem;
- }
-  
- .navbar-toggler {
-    padding: .6rem .6rem;
-    font-size: 1rem;
- }
-  
- #delivery-banner h4 {
-    font-size: .9rem;
- }
-  
+ } */
+
+
  .btn.btn-outline-black.rounded-0,
- .btn.btn-black.rounded-0 {
+ .btn.btn-black.rounded-pill {
     padding: .375rem .375rem;
  }
   
- .btn.btn-outline-black.rounded-0.btn-lg,
+ .btn.btn-outline-black.rounded-pill.btn-lg,
  .btn.btn-black.rounded-0.btn-lg {
     padding: .375rem .375rem;
     font-size: .75rem;

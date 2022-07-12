@@ -1,5 +1,10 @@
 <div class="collapse navbar-collapse" id="main-nav">
     <ul class="navbar-nav w-auto mx-auto">
+        <li class="nav-item d-block d-md-none">
+            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="{% url 'home' %}" id="home-link">
+                Home
+            </a>
+        </li>
         <!-- All product tab on nav bar -->
         <li class="nav-item dropdown hvr-grow">
             <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="all-products-link"
@@ -29,17 +34,17 @@
                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Skincare
             </a>
-             <div class="dropdown-menu border-0" aria-labelledby="skincare-link">
+            <div class="dropdown-menu border-0" aria-labelledby="skincare-link">
                 <a href="{% url 'products' %}?category=skincare" class="dropdown-item">Skin care</a>
-            </div> 
+            </div>
         </li>
 
-    <!-- Vegan wraps tab on nav bar -->
-    <li class="nav-item dropdown hvr-grow">
-        <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="vegan_wraps-link"
-            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Vegan Wraps
-        </a>
-        <div class="dropdown-menu border-0" aria-labelledby="vegan_wraps-link">
-            <a href="{% url 'products' %}?category=vegan_wraps" class="dropdown-item">Vegans wraps</a>
-        </div> 
+        <!-- Vegan wraps tab on nav bar -->
+        <li class="nav-item dropdown hvr-grow">
+            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="vegan_wraps-link"
+                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Vegan Wraps
+            </a>
+            <div class="dropdown-menu border-0" aria-labelledby="vegan_wraps-link">
+                <a href="{% url 'products' %}?category=vegan_wraps" class="dropdown-item">Vegans wraps</a>
+            </div>
