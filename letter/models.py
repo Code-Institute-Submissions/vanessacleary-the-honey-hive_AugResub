@@ -1,7 +1,6 @@
 from django.db import models
 
 
-
 class Subscribers(models.Model):
     class Meta:
         verbose_name_plural = "Subscribers"
