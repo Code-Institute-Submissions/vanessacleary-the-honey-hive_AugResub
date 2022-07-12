@@ -385,6 +385,7 @@ By website creator. The 'About' section was written by the website creator to re
 * Code Institute's [Boutique Ado walkthrough project](8
 https://github.com/Code-Institute-Solutions/boutique_ado_v1) was used throughout as a guide.
 * The landing page was edited from the (WC schools)[https://www.w3schools.com/w3css/w3css_templates.asp]
+* The Subscribe form model inspired by (KenBroTech)[https://github.com/KenBroTech/Django-Newsletter-Project]
 * The footer was edit from [Surf the wave](https://github.com/anyahush/surf-the-wave)
 
 ## Awknowledgements
