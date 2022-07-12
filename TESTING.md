@@ -414,12 +414,16 @@
 
 ### Validation
 
-* Using the (W3C)[https://validator.w3.org/] the following errors were found:
+* Using the (W3C)[https://validator.w3.org/] HTML validator the following errors were found:
     * There were others errors that were fixed and these were remaining. 
     * It was assumed these were fixed but the errors are still showing 
     * These will now be fixed at a later stage
 
 ![](readme/assets/testing-images/html-validation.png)
+
+* Using th (W3C)[https://jigsaw.w3.org/css-validator/]CSS validator there were no errors found with the CSS
+
+![](readme/assets/testing-images/css-validation.png)
 
 
 ## Further Manual Testing
