@@ -4,6 +4,7 @@ html {
  
 body {
    font-family: 'Merriweather', serif;
+   min-height: 100vh;
 }
  
 
@@ -226,12 +227,14 @@ btn-contact {
  
 /* Footer */
 footer {
-   bottom: 0;
+   /* position: fixed; */
+   /* bottom: 0; */
    background-color: #0e1111;
    color: #fff;
    padding: 20px;
-   /* position: relative;  */
    width: 100%;
+   min-height: 70vh;
+   padding-bottom: 25px;
 }
  
 footer a {
