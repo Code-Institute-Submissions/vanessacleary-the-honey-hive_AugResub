@@ -51,8 +51,7 @@
       <div id="topnav" class="row bg-white pt-lg-2 d-none d-lg-flex">
          <div class="col-12 col-lg-4 my-auto py-1 py-lg-0 text-center text-lg-left">
             <a href="{% url 'home' %}" class="nav-link main-logo-link">
-               <h2 class="logo-font text-logo my-0 hvr-grow">The <strong style="color: #ffc107"><u>Honey</u></strong>
-                  Hive
+               <h2 class="logo-font text-logo my-0 hvr-grow">The <strong style="color: #ffc107"><u>Honey</u></strong>Hive
                </h2>
             </a>
          </div>
@@ -159,65 +158,56 @@
    {% endblock %}
    <!-- Footer -->
    <footer class="mt-5">
-      <div class="row">
-         <div class="col-6">
-            <div class="row">
-               <div class="col-12 d-flex justify-content-center">
+      <div class="container">
+    
+        <div class="row">
+           <div class="col-4">
+                <div class="d-flex justify-content-center">
                   <p class="footer-titles">Follow</p>
-               </div>
-            </div>
-            <!-- Social media links -->
-            <div class="row ">
-               <div class="col-12 d-flex justify-content-center">
+              </div>
+              <!-- Social media links -->
+              <div class="d-flex justify-content-center">
                   <ul class="list-inline list-unstyled">
-                     <li class="list-inline-item hvr-grow">
-                        <a href="https://www.facebook.com/" target="_blank" aria-label="Link to go to Facebook"
-                           rel="noopener"><i class="fab fa-facebook-square fa-lg"></i></a>
-                     </li>
-                     <li class="list-inline-item hvr-grow">
-                        <a href="https://www.instagram.com/" target="_blank" aria-label="Link to go to Instagram"
-                           rel="noopener"><i class="fab fa-instagram fa-lg"></i></a>
-                     </li>
-                     <li class="list-inline-item hvr-grow">
-                        <a href="https://twitter.com/" target="_blank" aria-label="Link to go to Twitter"
-                           rel="noopener"><i class="fab fa-twitter fa-lg"></i></a>
-                     </li>
+                      <li class="list-inline-item hvr-grow">
+                        <a href="https://www.facebook.com/" target="_blank" aria-label="Link to go to Facebook" rel="noopener"><i class="fab fa-facebook-square fa-lg" aria-hidden="true"></i></a>
+                      </li>
+                      <li class="list-inline-item hvr-grow">
+                        <a href="https://www.instagram.com/" target="_blank" aria-label="Link to go to Instagram" rel="noopener"><i class="fab fa-instagram fa-lg" aria-hidden="true"></i></a>
+                      </li>
                   </ul>
-               </div>
+              </div>
+           </div>
+           <!-- Contact -->
+           <div class="col-4">
+              <div class="d-flex justify-content-center">
+                <a href="/contact/" aria-label="Link to go to contact form">
+                    <p class="footer-titles hvr-grow">Contact</p>
+                </a>
+              </div>
+             
             </div>
-         </div>
-         <!-- Contact -->
-         <div class="col-6">
-            <div class="row">
-               <div class="col-12 d-flex justify-content-center">
-                  <a href="{% url 'contact' %}" aria-label="Link to go to contact form">
-                     <p class="footer-titles hvr-grow">Contact</p>
-                  </a>
-                  <div class="col-12 d-flex justify-content-center">
-                     <a href="{% url 'letter' %}" aria-label="Link to go to contact form">
-                        <p class="footer-titles hvr-grow">Subscribe</p>
-                  </div>
-               </div>
+           <div class="col-4">
+            <div class="d-flex justify-content-center">
+              <a href="/letter/" aria-label="Link to go to contact form">
+                <p class="footer-titles hvr-grow">Subscribe</p>
+              </a>
             </div>
-            <!-- back to top links -->
-            <div class="row">
-               <div class="col-12 d-flex justify-content-center hvr-grow">
-                  <!-- <i class="fa-solid fa-arrow-up"></i> -->
-                  <a href="#" aria-label="Link to go to top of page">Back to top</a>
-               </div>
+            <div class="d-flex justify-content-center hvr-grow">
+              <a href="#" aria-label="Link to go to top of page">Back to top</a>
             </div>
-         </div>
+           </div>
+        </div>
+        <div class="container-fluid">
+           <hr class="hr-decoration">
+        </div>
+        <!-- Brand -->
+        <div class="row">
+           <div class="col-12">
+              <p class="text-center">© 2022 The HoneyHive</p>
+           </div>
+        </div>
       </div>
-      <div class="container-fluid">
-         <hr class="hr-decoration">
-      </div>
-      <!-- Brand -->
-      <div class="row">
-         <div class="col-12">
-            <p class="text-center">© 2022 The HoneyHive</p>
-         </div>
-      </div>
-   </footer>
+       </footer>
    {% block postloadjs %}
    <script type="text/javascript">
       $('.toast').toast('show');
