@@ -299,9 +299,9 @@ By website creator. The 'About' section was written by the website creator to re
 
 **All bugs an issues will be fixed in a future version**
 
+* Responsiveness is not 100% on mobile 
 * The footer hooverson the middle on page for the shopping bag page and some mobile deives. 
 * The footer on the my proifle page does not span the width of the page.
-* Responsiveness is not 100% on mobile 
 * All success messages come from the shopping bag icon
 * The hoove.css caused issued to the nav bar which effected the drop down so it was taken out sue to time constraints to fix
       ![](readme/assets/testing-imgs/css.png)
@@ -380,10 +380,12 @@ By website creator. The 'About' section was written by the website creator to re
 * First you need to register for an account with Stripe, if you don't have one already.
 * In the dashboard, go to the section for Developers and select 'API keys'. Here you will get your publishable and secret keys. These are not to go in version control. These can be stored in the GitHub environment during development and Heroku Config Vars if deploying.
 * Next go to 'Webhooks' in the side menu. Select 'Add endpoint'
+    ![](readme/assets/deployment-imgs/webhook.png)
 * Add the url in for the site followed by /checkout/wh/
 * If deploying, you will need to create a new endpoint with the deployed URL
 * Next select the events you want for the webhooks, once selected then 'Add Endpoint'.
 * In your new webhook there is a signing secret. Copy this and add to variable STRIPE_WH_SECRET in the GitHub environment. When creating an endpoint for Heroku, this will create a new signing secret.
+
 
 ### Heroku Deployment
 * Firstly login into your Heroku account.
