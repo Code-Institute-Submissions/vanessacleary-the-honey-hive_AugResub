@@ -215,8 +215,6 @@ input[name='q']::placeholder {
  
 /* Footer */
 footer {
-   /* position: fixed;
-   bottom: 0; */
    background-color: #0e1111;
    color: #fff;
    padding: 20px;
