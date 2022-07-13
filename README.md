@@ -1,5 +1,23 @@
 [Link to live project](https://the-honey-hive.herokuapp.com/).
 
+## Table of contents:
+
+1. [Project Goals](https://github.com/vanessacleary/the-honey-hive#project-goals)
+2. [UX](https://github.com/vanessacleary/the-honey-hive#ux-design)
+3. [Strategy Plane](https://github.com/vanessacleary/the-honey-hive#strategy-plane)
+    * [User Stories](https://github.com/vanessacleary/the-honey-hive#user-stories)
+4. [Scope Plane](https://github.com/vanessacleary/the-honey-hive#scope-plane)
+    * [Existing Features](https://github.com/anyahush/surf-the-wave#existing-features)
+    * [Features Left to Implement](https://github.com/vanessacleary/the-honey-hive#features-left-to-implement)
+5. [Structure Plane](https://github.com/vanessacleary/the-honey-hive#structure-plane)
+6. [Skeleton Plane](https://github.com/vanessacleary/the-honey-hive#skeleton-plane)
+7. [Surface Plane](https://github.com/vanessacleary/the-honey-hive#surface-plane)
+8. [Technologies](https://github.com/vanessacleary/the-honey-hive#technologies)
+9. [Challenges](https://github.com/vanessacleary/the-honey-hive#challenges)
+10. [Testing](TESTING.md)
+11. [Deployment](https://github.com/vanessacleary/the-honey-hive#deployment)
+12. [Credits](https://github.com/vanessacleary/the-honey-hive#credits)
+13. [Acknowledgements](https://github.com/vanessacleary/the-honey-hive#acknowledegments)
 
 This is the final portfolio project that will finalize the Full Stack Software Development Program at the Code Institute.
 
@@ -9,7 +27,7 @@ Based on the above requirements, this ecommerce website was created to showcase 
 
 Beeswax products have been increasing in popularity over the last number of years but there is a gap in the market for a website that sells a host of brands of all the different products and brands. 
 
-## **Project goals** 
+## **Project Goals** 
 
 * Develop an e-commerce website to sell multiple beeswax brand products in one place.
 * Create an Admin access account on the platform to allow the company to make the required changes to the data sets in the database
@@ -17,7 +35,7 @@ Beeswax products have been increasing in popularity over the last number of year
 * Build a smart and responsive web app to enable users to view displayed information easily
 * Handle any errors in such a way to help the user understand the issue and provide an easy form of contact if any error should persist
 
-## **Business goals**
+## **Business Goals**
 
 * To sell beeswax products 
 * To promote the product and brand range of beeswax products to new and existing customers with the hope of increasing basket value
@@ -41,19 +59,19 @@ Beeswax products have been increasing in popularity over the last number of year
 
 ## Strategy Plane
 
-## Site Owner Goals
+### Site Owner Goals
 
 * Promote candle shop business and increase sales candles
 * Increase online status and promote the site on social media
 * Encourage the uptake of organic candle
 
-## Demographics
+### Demographics
 
 * All genders and ethnicities
 * Ages 18+
 * Retail purchases not commercial wholesale
 
-## USER STORIES
+### User Stories
 
 ### As a first time visitor:
 * I want to easily navigate throughout the site.
@@ -63,7 +81,7 @@ Beeswax products have been increasing in popularity over the last number of year
 * I want the site to be responsive across all devices.
 * I want to be able to subscribe to The HoneyHive newsletter
 
-### As an unregistered visitor:
+#### As an unregistered visitor:
 * I want to be able to search and filter products easily and efficiently.
 * I want to be able to sort and view products according to type, price and name.
 * I want to be able to view product details so I can find information about price, size and description.
@@ -76,7 +94,7 @@ Beeswax products have been increasing in popularity over the last number of year
 * I want to be able to receive an email confirmation of my order.
 * I want to be able to register easily for an account.
 
-### As a registered visitor:
+#### As a registered visitor:
 * I want to be able to receive a confirmation email upon registration.
 * I want to be able to view my personalized profile.
 * I want to be able to save and edit personal information on my profile.
@@ -87,12 +105,12 @@ Beeswax products have been increasing in popularity over the last number of year
 * I want to be able to reset my password if I forget it.
 * I want to receive a confirmation email when I submit an enquiry message on the contact page
 
-### As a returning visitor:
+#### As a returning visitor:
 * I want to be able to find social media links.
 * I want to be able to contact the site owner if I have any queries.
 * I want to enjoy using the site without never ending scrolling.
 
-### As a superuser:
+#### As a superuser:
 * I want to be able to add new products.
 * I want to be able to edit or delete existing products.
 * I want to be able to add new categories.
@@ -173,11 +191,10 @@ Data schema form
 
 ### Wireframes
 
-* Desktop 
-* Mobile
-* Tablet
+* Wireframes can be found [here](wireframes.md)
 
-Changes to wireframes 
+* Changes to wireframes
+    * Intended design did not change much from the original wireframes.
 
 ## Surface Plane 
 
@@ -246,22 +263,17 @@ By website creator. The 'About' section was written by the website creator to re
 - [CSS Beautifier](https://www.freeformatter.com/css-beautifier.html) - Beautifying CSS Code
 - [JavaScript Validator](https://beautifytools.com/javascript-validator.php) - Validating JS code
 - [Am I Responsive?](http://ami.responsivedesign.is/) - Webpage Breakpoint visualizer and image generator
-- [Black](https://black.readthedocs.io/en/stable/)- Code Formatter
 - [W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/)
-- [Browser Stack Responsive Design Tester](https://www.browserstack.com/responsive)
 - [Media Genesis RESPONSIVE WEB DESIGN CHECKER](https://responsivedesignchecker.com/)
 - [Chrome Dev Tools](https://developer.chrome.com/docs/devtools/)
 - [Lighthouse](https://developers.google.com/web/tools/lighthouse)
-- [pylint](https://pylint.org/)
 </details>
 
 <details>
 <summary> Documentation</summary>
 
-- [Markdown Table Generator](https://www.tablesgenerator.com/markdown_tables) - Markdown Table Production
-- [Table Converter](https://tableconvert.com/excel-to-markdown) - Excel to Markdown table converter 
+- [Markdown Table Generator](https://www.tablesgenerator.com/markdown_tables) - Markdown Table Production 
 </details>
-
 
 
 ## **Testing User Stories**
@@ -381,11 +393,10 @@ By website creator. The 'About' section was written by the website creator to re
 
 ### Code content
 
-* README.md was used from this code institute example ready me 
-* Code Institute's [Boutique Ado walkthrough project](8
-https://github.com/Code-Institute-Solutions/boutique_ado_v1) was used throughout as a guide.
-* The landing page was edited from the (WC schools)[https://www.w3schools.com/w3css/w3css_templates.asp]
-* The Subscribe form model inspired by (KenBroTech)[https://github.com/KenBroTech/Django-Newsletter-Project]
+* README.md was used inspired by [codes institute readme](https://github.com/Code-Institute-Solutions/SampleREADME) and my past projects
+* Code Institute's [Boutique Ado walkthrough project](https://github.com/Code-Institute-Solutions/boutique_ado_v1) was used throughout as a guide.
+* The landing page was edited from the [WC schools](https://www.w3schools.com/w3css/w3css_templates.asp)
+* The Subscribe form model inspired by [KenBroTech](https://github.com/KenBroTech/Django-Newsletter-Project)
 * The footer was edit from [Surf the wave](https://github.com/anyahush/surf-the-wave)
 
 ## Awknowledgements
