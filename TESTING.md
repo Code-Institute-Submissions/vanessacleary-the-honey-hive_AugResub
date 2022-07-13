@@ -301,120 +301,121 @@
 
 * Desktop 
 
-![](readme/assets/testing-images/light-house-1-desktop.png)
+    ![](readme/assets/testing-images/light-house-1-desktop.png)
 
 * Mobile
 
-![](readme/assets/testing-images/light-house-1-mobile.png)
+        ![](readme/assets/testing-images/light-house-1-mobile.png)
 
 ### Products page
 
 * Desktop
 
-![](readme/assets/testing-images/product-mobile.png)
+    ![](readme/assets/testing-images/product-mobile.png)
 
 * Mobile
 
-![](readme/assets/testing-images/product-mobile.png)
+    ![](readme/assets/testing-images/product-mobile.png)
 
 
 ## Products page
 
 * Products Page
 
-![](readme/assets/testing-images/product-desktop.png)
+    ![](readme/assets/testing-images/product-desktop.png)
 
 * Mobile
 
-![](readme/assets/testing-images/product-mobile.png)
+    ![](readme/assets/testing-images/product-mobile.png)
 
 ### Product Detail Page
 
 * Desktop
 
-![](readme/assets/testing-images/product-detail-desktop.png)
+    ![](readme/assets/testing-images/product-detail-desktop.png)
 
 * Mobile
 
-![](readme/assets/testing-images/product-detail-mobile.png)
+    ![](readme/assets/testing-images/product-detail-mobile.png)
 
 ### Product Detail Page
 
 * Desktop
 
-![](readme/assets/testing-images/product-detail-desktop.png)
+    ![](readme/assets/testing-images/product-detail-desktop.png)
 
 * Mobile
 
-![](readme/assets/testing-images/product-detail-mobile.png)
+    ![](readme/assets/testing-images/product-detail-mobile.png)
 
 ### Add Product Page
 
 * Desktop
 
-![](readme/assets/testing-images/add-product-mobile.png)
+    ![](readme/assets/testing-images/add-product-mobile.png)
 
 * Mobile
 
-![](readme/assets/testing-images/add-product-desktop.png)
+    ![](readme/assets/testing-images/add-product-desktop.png)
 
 
 ### Shopping bag Page
 
 * Desktop
 
-![](readme/assets/testing-images/bag-desktop.png)
+    ![](readme/assets/testing-images/bag-desktop.png)
 
 * Mobile
 
-![](readme/assets/testing-images/bag-mobile.png)
+    ![](readme/assets/testing-images/bag-mobile.png)
 
 
 ### Checkout Page
 
 * Desktop
 
-![](readme/assets/testing-images/checkout-desktop.png)
+    ![](readme/assets/testing-images/checkout-desktop.png)
 
 * Mobile
 
-![](readme/assets/testing-images/checkout-mobile.png)
+    ![](readme/assets/testing-images/checkout-mobile.png)
 
 
 ### Success Page
 
 * Desktop
 
-![](readme/assets/testing-images/success-desktop.png)
+    ![](readme/assets/testing-images/success-desktop.png)
 
 * Mobile
 
-![](readme/assets/testing-images/success-mobile.png)
+    ![](readme/assets/testing-images/success-mobile.png)
 
 ### Contact Page
 
 * Desktop
 
-![](readme/assets/testing-images/contact-desktop.png)
+    ![](readme/assets/testing-images/contact-desktop.png)
 
 * Mobile
 
-![](readme/assets/testing-images/contact-mobile.png)
+    ![](readme/assets/testing-images/contact-mobile.png)
 
 
 ### Subscribe Page
 
 * Desktop
 
-![](readme/assets/testing-images/subscribe-desktop.png)
+    ![](readme/assets/testing-images/subscribe-desktop.png)
 
 * Mobile
 
-![](readme/assets/testing-images/subscribe-mobile.png)
+    ![](readme/assets/testing-images/subscribe-mobile.png)
 
 ## Validation
 
 ### HTML Validation
+
 * Using the (W3C)[https://validator.w3.org/] HTML validator the following errors were found:
     * There were others errors that were fixed and these were remaining. 
     * It was assumed these were fixed but the errors are still showing 

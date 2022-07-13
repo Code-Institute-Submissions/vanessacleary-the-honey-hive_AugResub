@@ -15,8 +15,6 @@
 
 ![](readme/assets/wireframes/cart.png)
 
-cart
-
 Profile
 
 Contact
