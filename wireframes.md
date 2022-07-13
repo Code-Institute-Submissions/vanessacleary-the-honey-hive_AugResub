@@ -15,21 +15,15 @@
 
 ![](readme/assets/wireframes/cart.png)
 
-Profile
+![](readme/assets/wireframes/profile.png)
 
-Contact
+![](readme/assets/wireframes/contact.png)
 
-add 
+![](readme/assets/wireframes/add-prouct.png)
 
-edit 
+![](readme/assets/wireframes/edit-product.png)
 
-save 
-
-delete
-
-subscribe 
-
-Order 
+![](readme/assets/wireframes/subscribe.png)
 
 
 ### Mobile
@@ -51,21 +45,6 @@ Order
 ![](readme/assets/wireframes/mobile-profile.png)
 
 
-Contact
-
-add 
-
-edit 
-
-save 
-
-delete
-
-subscribe 
-
-Order 
-
-
 ### Tablet
 
 ![](readme/assets/wireframes/tablet-landing.png)
@@ -77,17 +56,3 @@ Order
 ![](readme/assets/wireframes/tablet-signup.png)
 
 ![](readme/assets/wireframes/tablet-contact.png)
-
-Contact
-
-add 
-
-edit 
-
-save 
-
-delete
-
-subscribe 
-
-Order 

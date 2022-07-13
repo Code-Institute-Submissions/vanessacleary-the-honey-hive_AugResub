@@ -14,10 +14,11 @@
 7. [Surface Plane](https://github.com/vanessacleary/the-honey-hive#surface-plane)
 8. [Technologies](https://github.com/vanessacleary/the-honey-hive#technologies)
 9. [Challenges](https://github.com/vanessacleary/the-honey-hive#challenges)
-10. [Testing](TESTING.md)
-11. [Deployment](https://github.com/vanessacleary/the-honey-hive#deployment)
-12. [Credits](https://github.com/vanessacleary/the-honey-hive#credits)
-13. [Acknowledgements](https://github.com/vanessacleary/the-honey-hive#acknowledegments)
+10. [Known issues and bugs](https://github.com/vanessacleary/the-honey-hive#Known-issues-and-bugs)
+11. [Testing](TESTING.md)
+12. [Deployment](https://github.com/vanessacleary/the-honey-hive#deployment)
+13. [Credits](https://github.com/vanessacleary/the-honey-hive#credits)
+14. [Acknowledgements](https://github.com/vanessacleary/the-honey-hive#acknowledegments)
 
 This is the final portfolio project that will finalize the Full Stack Software Development Program at the Code Institute.
 
@@ -192,6 +193,7 @@ During the initial strategy planning, the opportunities of the site were determi
 ### Wireframes
 
 * Wireframes can be found [here](wireframes.md)
+    * wireframes not availabe for all pages more mobile and tablet but the same design. The design is similar across each page. Accidently delete wireframes and sue to time restraints I did not have time to re-create.
 
 * Changes to wireframes
     * Intended design did not change much from the original wireframes.
@@ -289,6 +291,18 @@ By website creator. The 'About' section was written by the website creator to re
 * Confirmation emails were not triggering when an order was compeleted. This was because the the webhook endpoint was missing a '/' at the end. 
 * The product images were not showing on the deployed site, and after completing the loaddata commands, the products still were not showing. There were some ',' missing from the json file that caused this. 
 * Time was a challenge as not everyhting that had intededed to be included could be included to to submission deadline
+
+## Known issues and bugs 
+
+**All bugs an issues will be fixed in a future version**
+
+* The footer hooverson the middle on page for the shopping bag page and some mobile deives. 
+* The footer on the my proifle page does not span the width of the page.
+* Responsiveness is not 100% on mobile 
+* All success messages come from the shopping bag icon
+* The hoove.css caused issued to the nav bar which effected the drop down so it was taken out sue to time constraints to fix
+      ![](readme/assets/testing-imgs/css.png)
+
 
 ## Deployment 
 
