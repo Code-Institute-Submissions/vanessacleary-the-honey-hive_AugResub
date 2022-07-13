@@ -20,6 +20,9 @@
     * The colours, style and layout have been choosen to enure a good user expierence. 
     * Design aspects and products have been taken from other Beeswas websites - see credits for more information
 
+       ![](readme/assets/testing-images/design.png)
+
+
 ---------------------------------------------------------------------------------------------------------------------------
 
 * I want the site to be accessible.
@@ -31,7 +34,10 @@
 * I want the site to be responsive across all devices.
     * Throughout development responsiveness has been considered. 
     * Using Bootstrap and media queries the site is accessible across all devices.
+    
+    ![](readme/assets/testing-images/iphoneX.png)
 
+    ![](readme/assets/testing-images/ipadair.png)
 ---------------------------------------------------------------------------------------------------------------------------
 
 * I want to be able to subscribe to The HoneyHive newsletter
@@ -136,6 +142,7 @@
 * I want to be able to receive a confirmation email upon registration.
     * Users receive a confirmation email to verify their email address
 
+
 ---------------------------------------------------------------------------------------------------------------------------
 
 * I want to be able to view my personalized profile.
@@ -173,23 +180,12 @@
     
 ---------------------------------------------------------------------------------------------------------------------------
 
-* I want to be able to change my password to keep my account secure.
-    * Under 'My Account' on the profile page, users can change their password.
-
----------------------------------------------------------------------------------------------------------------------------
-
 * I want to be able to reset my password if I forget it.
     * On the login page, users can click a link to reset their password if they have forgotten it.
 
      ![](readme/assets/testing-images/login-forms.png)
 
 ---------------------------------------------------------------------------------------------------------------------------
-
-* I want to be able to delete my account.
-    * Under 'My Account' on the profile page, users can delete their account
-
----------------------------------------------------------------------------------------------------------------------------
-
 
 * I want to receive a confirmation email when I submit an enquiry message on the contact page
     * An email is sent to the user who submits an enquiry through the contact page
@@ -247,12 +243,6 @@
 
 ---------------------------------------------------------------------------------------------------------------------------
 
-* I want to be able to access the Django admin portal easily
-    * In the superuser user option dropdown there is a link to the admin portal
-
-
----------------------------------------------------------------------------------------------------------------------------
-
 * I want to be able to delete a user.
     * In the admin portal, superusers can delete any user.
 
@@ -301,52 +291,44 @@
 
 * Desktop 
 
-    ![](readme/assets/testing-images/light-house-1-desktop.png)
+![](readme/assets/lighthouse/light-house-1-desktop.png)
 
 * Mobile
 
-        ![](readme/assets/testing-images/light-house-1-mobile.png)
+ ![](readme/assets/lighthouse/light-house-1-mobile.png)
+
 
 ### Products page
 
 * Desktop
 
-    ![](readme/assets/testing-images/product-mobile.png)
+    ![](readme/assets/lighthouse/product-mobile.png)
 
 * Mobile
 
-    ![](readme/assets/testing-images/product-mobile.png)
+    ![](readme/assets/lighthouse/product-mobile.png)
 
 
 ## Products page
 
 * Products Page
 
-    ![](readme/assets/testing-images/product-desktop.png)
+    ![](readme/assets/lighthouse/product-desktop.png)
 
 * Mobile
 
-    ![](readme/assets/testing-images/product-mobile.png)
+    ![](readme/assets/lighthouse/product-mobile.png)
 
 ### Product Detail Page
 
 * Desktop
 
-    ![](readme/assets/testing-images/product-detail-desktop.png)
+    ![](readme/assets/lighthouse/product-detail-desktop.png)
 
 * Mobile
 
-    ![](readme/assets/testing-images/product-detail-mobile.png)
+    ![](readme/assets/lighthouse/product-detail-mobile.png)
 
-### Product Detail Page
-
-* Desktop
-
-    ![](readme/assets/testing-images/product-detail-desktop.png)
-
-* Mobile
-
-    ![](readme/assets/testing-images/product-detail-mobile.png)
 
 ### Add Product Page
 
@@ -363,43 +345,43 @@
 
 * Desktop
 
-    ![](readme/assets/testing-images/bag-desktop.png)
+    ![](readme/assets/lighthouse/bag-desktop.png)
 
 * Mobile
 
-    ![](readme/assets/testing-images/bag-mobile.png)
+    ![](readme/assets/lighthouse/bag-mobile.png)
 
 
 ### Checkout Page
 
 * Desktop
 
-    ![](readme/assets/testing-images/checkout-desktop.png)
+    ![](readme/assets/lighthouse/checkout-desktop.png)
 
 * Mobile
 
-    ![](readme/assets/testing-images/checkout-mobile.png)
+    ![](readme/assets/lighthouse/checkout-mobile.png)
 
 
 ### Success Page
 
 * Desktop
 
-    ![](readme/assets/testing-images/success-desktop.png)
+    ![](readme/assets/lighthouse/success-desktop.png)
 
 * Mobile
 
-    ![](readme/assets/testing-images/success-mobile.png)
+    ![](readme/assets/lighthouse/success-mobile.png)
 
 ### Contact Page
 
 * Desktop
 
-    ![](readme/assets/testing-images/contact-desktop.png)
+    ![](readme/assets/lighthouse/contact-desktop.png)
 
 * Mobile
 
-    ![](readme/assets/testing-images/contact-mobile.png)
+    ![](readme/assets/lighthouse/contact-mobile.png)
 
 
 ### Subscribe Page

@@ -100,8 +100,6 @@ Beeswax products have been increasing in popularity over the last number of year
 * I want to be able to save and edit personal information on my profile.
 * I want to be able to view my order history.
 * I want to be able to login and logout with ease.
-* I want to be able to delete my account.
-* I want to be able to change my password to keep my account secure.
 * I want to be able to reset my password if I forget it.
 * I want to receive a confirmation email when I submit an enquiry message on the contact page
 
@@ -114,7 +112,6 @@ Beeswax products have been increasing in popularity over the last number of year
 * I want to be able to add new products.
 * I want to be able to edit or delete existing products.
 * I want to be able to add new categories.
-* I want to be able to access the Django admin portal easily
 * I want to be able to delete a user.
 * I want to be able to make another user admin.
 * I want to be notified when a user fills out the contact form, so I don't have to check the admin portal constantly.
