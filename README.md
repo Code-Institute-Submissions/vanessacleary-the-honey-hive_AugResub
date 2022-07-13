@@ -1,3 +1,6 @@
+
+![](readme/assets/other-imgs/website-img.png)
+
 [Link to live project](https://the-honey-hive.herokuapp.com/).
 
 ## Table of contents:
@@ -7,7 +10,7 @@
 3. [Strategy Plane](https://github.com/vanessacleary/the-honey-hive#strategy-plane)
     * [User Stories](https://github.com/vanessacleary/the-honey-hive#user-stories)
 4. [Scope Plane](https://github.com/vanessacleary/the-honey-hive#scope-plane)
-    * [Existing Features](https://github.com/anyahush/surf-the-wave#existing-features)
+    * [Existing Features](https://github.com/vanessacleary/the-honey-hive#existing-features)
     * [Features Left to Implement](https://github.com/vanessacleary/the-honey-hive#features-left-to-implement)
 5. [Structure Plane](https://github.com/vanessacleary/the-honey-hive#structure-plane)
 6. [Skeleton Plane](https://github.com/vanessacleary/the-honey-hive#skeleton-plane)
