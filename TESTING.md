@@ -1,3 +1,10 @@
+## Responsiveness
+
+* Responsiveness is not 100% accurate, especially on some mobile deives. I used [Browser Stack](https://www.browserstack.com/) to check, along with dev tools and personal devices. This is also documented in known issues. 
+
+ ![](readme/assets/testing-images/responsiveness.png)
+
+
 ## **Testing First time User Stories**
  
   * I want to easily navigate throughout the site.
@@ -125,6 +132,8 @@
 * I want to be able to receive an email confirmation of my order. 
     * Following a successful order an order confirmation email is sent.
 
+      ![](readme/assets/testing-images/order-confirmation.png)
+
 
 ---------------------------------------------------------------------------------------------------------------------------
 
@@ -141,6 +150,8 @@
 
 * I want to be able to receive a confirmation email upon registration.
     * Users receive a confirmation email to verify their email address
+
+    ![](readme/assets/testing-images/signup-confirmation.png)
 
 
 ---------------------------------------------------------------------------------------------------------------------------
