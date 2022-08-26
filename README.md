@@ -1,7 +1,7 @@
 
 ![](readme/assets/other-imgs/website-img.png)
 
-[Link to live project](https://the-honey-hive.herokuapp.com/).
+[Link to live project click here](https://the-honey-hive.herokuapp.com/).
 
 ## Table of contents:
 
